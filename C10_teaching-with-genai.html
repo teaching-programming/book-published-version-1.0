@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Steven Watterson">
+<meta name="author" content="Laila Dabab Nahas">
+<meta name="author" content="Tuğrulcan Elmas">
+<meta name="author" content="Hebatallah Shoukry">
+<meta name="author" content="Ozan Evkaya">
+<meta name="keywords" content="LLMs, scalable-assessment">
+
+<title>An Optimistic Outlook on Teaching, Learning and Assessment for Coding With the Emergence of Generative AI – Teaching Programming Across Disciplines</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./C44_ai-voice-and-style-in-programming-education.html" rel="next">
+<link href="./C08_hype-need-responsible-compute.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-136cf767a9531f2487009142f5ee0ff5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="_theme/styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./C10_teaching-with-genai.html"><span class="chapter-title">An Optimistic Outlook on Teaching, Learning and Assessment for Coding With the Emergence of Generative AI</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Teaching Programming Across Disciplines</a> 
+        <div class="sidebar-tools-main">
+    <div class="dropdown">
+      <a href="" title="" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label=""><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://drive.google.com/file/d/1RXSGxyDcteqqrIdwouAdJ0ayOzNCw2cp/view?usp=sharing">
+            Download PDF
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Teaching Programming Across Disciplines</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C00.0_book_copyright_page.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Copyright</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C00.1_dedication.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dedication</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C00.2_this_book.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Who Are We and How Did We Get Here?</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C00.3_all_parts_introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome to the Book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">=== Part I — Theories and Applications of Teaching Programming</span></span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./P01_part-theories-applications.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introduction to Part I</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Theme — Pair Programming: What? How? Why?</span></span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C12_pair-programming-overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Where Do I Even Start With Pair Programming in My Classroom? A Conversation With Seasoned Practitioners</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C36_pair-programming-across-disciplines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structured Group Work With Assigned Asymmetrical Roles and Switching: Lessons From Pair Programming Across Disciplines</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C41_pair-programming-tutor-reflections.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pair Programming in Practice: A PhD Tutor’s Reflections</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Theme — Building Healthy Programming Habits</span></span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C09_debugging-beyond-the-debugger.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Brain Book Buddy Boss Break: A Practical Debugging Framework for Learners</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C05_coding-mindset.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Guide on Empowering Students to Develop a Coding Mindset</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C40_coding-forces.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">It Depends: How to Develop Judgement in Programming</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Theme — Programming in a World of Generative AI</span></span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C08_hype-need-responsible-compute.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hype and The Need for Responsible Compute</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C10_teaching-with-genai.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">An Optimistic Outlook on Teaching, Learning and Assessment for Coding With the Emergence of Generative AI</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C44_ai-voice-and-style-in-programming-education.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">AI, Voice, and Style in Programming Education</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C21_programming-across-disciplines-systems-thinking.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">How Teaching Programming Across Disciplines Can Instil Systems Thinking</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Theme — Teaching Programming Courses: What Worked for Us</span></span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C04_computer-says-no.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computer Says No: Reducing Technical Barriers to Help Novice Programmers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C14_foster-inclusion-and-accessibility.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Practices To Foster Inclusion and Accessibility in Programming Teaching</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C33_coding-anxiety.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Overcoming Coding Anxiety: Lowering the Stakes and Making It Fun</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C34_three-stars-one-wish.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">3 Stars and 1 Wish: Small and Frequent Student Reflections Promote a Sense of Wonder and a Community of Vulnerability</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C11_sequential-vs-simultaneous.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sequential vs.&nbsp;Simultaneous: Approaches to Learning Programming and Statistics</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">=== Part II — Teaching Programming in Context: Design and Practice</span></span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./P02_part-design-practice.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introduction to Part II</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Theme — Drawing on Group Dynamics for Programming Education</span></span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C16_peer-programming.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Peer Programming in Action: Pair Programming in Larger Groups</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C31_leveraging-the-heterogeneity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Leveraging the Heterogeneity: Teaching Computing Skills to a Multidisciplinary Cohort With a Variable Skill Level</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C23_pair-programming-fusion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Learning Together Across Modes: Online and On-Site Pair Programming in a Fusion Course</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Theme — Teaching Programming to Novices: Python and Beyond</span></span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C01_teaching-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Practical Guide to Teaching Python as a Computational Tool in an Introductory Data Analysis Course</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C29_notebooks-for-novices.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Notebooks for Novices? Pros and Cons of Jupyter</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C07_teaching-C-to-novices.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Bridging Languages: Teaching C to Python Novices</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Theme — Thinking Outside the Box: Designing Engaging Learning Experiences</span></span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C06_feminists-and-anarchists.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Dungeon Crawlers and Anarchists: Co-Designing Programming Teaching Experiences</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C15_programming-without-computers.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Removing Barriers by Programming Without Computers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C17_coding-with-music.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Practical Approaches to Using Sound and Music in Programming Pedagogy</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C03_online-teaching-reflections.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Ways to Teach Online: Lessons Learned Through Experience</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C43-data-vis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Seeing Before Coding, Doodling Before Doing: How Teaching Data Visualisation Transforms the Way Students Think</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">=== Part III — Assessment and Feedback: Principles and Practice</span></span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./P03_part-assessment-feedback.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introduction to Part III</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Theme — Frameworks for Assessment and Feedback</span></span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C38_skills-based-assessment.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Developing a Skills-Based Framework for Assessments in Programming Courses</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C35_action-feedback-plan.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Managing the Rubik’s Cube of Assessment: The Action Feedback Protocol</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Theme — Practical Methods for Assessing Programming</span></span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C26.1-assessment-case-study.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assessment and Marking in an Introductory Programming Course for Physics Students</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C02_genai-before-during-after.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Generative AI in Assessments: Before, During, and After</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C20_automatic-marking.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Using Automated Marking in Programming Courses To Enhance Learning</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">=== Part IV — Case Studies</span></span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./P04_part-case-studies.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introduction to Part IV</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Theme — Building Learning Communities and Resources</span></span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C39_gentle-introduction-summer-school.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Gentle Introduction to Coding: Narratives From a Programming Summer School for Social Sciences and Humanities</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C37_pair-programming-sruc.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Case Study From Scotland’s Rural College: The Wild(Life) Side of Pair Programming</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C22_interdisciplinary-by-design.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Interdisciplinary by Design: The Centre for Data, Culture, &amp; Society Training Programme</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C32_civil-engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Changing Civil Engineering Students’ Mindset Toward Programming</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C24_lost-in-translation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Lost in Translation: Complexities and Good Practices of Translating Coding-Based Teaching Materials Across Multiple Human Languages</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">=== Authors and Images</span></span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C99.1-sendoff.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Closing Remarks for This Book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C99.2-authors.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Authors’ Biographies</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C99.3-images.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Image Register</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C99.4-bibliography.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bibliography</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
+<details id="accessibility-controls">
+    <summary>Display options</summary>
+  
+    <div class="control-group">
+        <label for="fontSizeSlider">Font size</label>
+        <input type="range" id="fontSizeSlider" min="8" max="32" value="16">
+        <span id="fontSizeValue">16</span>px
+    </div>
+  
+    <div class="control-group">
+        <label for="eyeStrainSlider">Eye strain</label>
+        <input type="range" id="eyeStrainSlider" min="0" max="50" value="0">
+        <span id="eyeStrainValue">0</span>%
+    </div>
+  
+    <div class="control-group">
+        <label for="hueRotateSlider">Hue</label>
+        <input type="range" id="hueRotateSlider" min="0" max="360" value="0">
+        <span id="hueRotateValue">0</span>
+    </div>
+  
+    <div class="control-group">
+        <label for="paddingSlider">Padding</label>
+        <input type="range" id="paddingSlider" min="0" max="12" value="3">
+        <span id="paddingValue">0</span>
+    </div>
+  
+    <div class="control-group">
+        <label for="lineSpacingSlider">Spacing</label>
+        <input type="range" id="lineSpacingSlider" min="80" max="250" value="150">
+        <span id="lineSpacingValue">150</span>%
+    </div>
+  
+    <div class="control-group">
+        <label for="fontFamily">Font</label>
+        <select id="fontFamily">
+            <option value="'Atkinson Hyperlegible', sans-serif">Atkinson Hyperlegible</option>
+            <option value="Arial, Helvetica, sans-serif">Sans-serif</option>
+            <option value="Georgia, 'Bitstream Charter', Times, serif">Serif</option>
+        </select>
+    </div>
+  
+    <div class="control-group">
+        <button id="resetDefaults">Reset to Defaults</button>
+    </div>
+
+</details>
+</div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#how-does-generative-ai-work" id="toc-how-does-generative-ai-work" class="nav-link" data-scroll-target="#how-does-generative-ai-work">How Does Generative AI Work?</a></li>
+  <li><a href="#the-current-state-of-genai-in-learning-and-teaching" id="toc-the-current-state-of-genai-in-learning-and-teaching" class="nav-link" data-scroll-target="#the-current-state-of-genai-in-learning-and-teaching">The Current State of GenAI in Learning and Teaching</a></li>
+  <li><a href="#genai-as-a-teaching-and-learning-partner" id="toc-genai-as-a-teaching-and-learning-partner" class="nav-link" data-scroll-target="#genai-as-a-teaching-and-learning-partner">GenAI as a Teaching and Learning Partner</a>
+  <ul class="collapse">
+  <li><a href="#genai-as-topic-expert" id="toc-genai-as-topic-expert" class="nav-link" data-scroll-target="#genai-as-topic-expert">GenAI As Topic Expert</a></li>
+  <li><a href="#ai-as-a-coding-partner" id="toc-ai-as-a-coding-partner" class="nav-link" data-scroll-target="#ai-as-a-coding-partner">AI as a Coding Partner</a></li>
+  <li><a href="#ai-as-a-puzzle-setter" id="toc-ai-as-a-puzzle-setter" class="nav-link" data-scroll-target="#ai-as-a-puzzle-setter">AI as a Puzzle Setter</a></li>
+  </ul></li>
+  <li><a href="#genai-as-a-coding-tool-for-the-student" id="toc-genai-as-a-coding-tool-for-the-student" class="nav-link" data-scroll-target="#genai-as-a-coding-tool-for-the-student">GenAI as a Coding Tool for the Student</a></li>
+  <li><a href="#assessing-learning" id="toc-assessing-learning" class="nav-link" data-scroll-target="#assessing-learning">Assessing Learning</a>
+  <ul class="collapse">
+  <li><a href="#supervision-of-assessment" id="toc-supervision-of-assessment" class="nav-link" data-scroll-target="#supervision-of-assessment">Supervision of Assessment</a></li>
+  <li><a href="#insufficiency" id="toc-insufficiency" class="nav-link" data-scroll-target="#insufficiency">Insufficiency</a></li>
+  <li><a href="#misdirection" id="toc-misdirection" class="nav-link" data-scroll-target="#misdirection">Misdirection</a></li>
+  <li><a href="#reverse-engineering-assessments" id="toc-reverse-engineering-assessments" class="nav-link" data-scroll-target="#reverse-engineering-assessments">Reverse Engineering Assessments</a></li>
+  <li><a href="#unsighted-data-sets-and-structures" id="toc-unsighted-data-sets-and-structures" class="nav-link" data-scroll-target="#unsighted-data-sets-and-structures">Unsighted Data Sets and Structures</a></li>
+  <li><a href="#student-self-assessment" id="toc-student-self-assessment" class="nav-link" data-scroll-target="#student-self-assessment">Student Self-Assessment</a></li>
+  </ul></li>
+  <li><a href="#the-digital-divergence" id="toc-the-digital-divergence" class="nav-link" data-scroll-target="#the-digital-divergence">The Digital Divergence</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const fontSizeSlider = document.getElementById('fontSizeSlider');
+        const fontSizeValue = document.getElementById('fontSizeValue');
+
+        const hueRotateSlider = document.getElementById('hueRotateSlider');
+        const hueRotateValue = document.getElementById('hueRotateValue');
+
+        const eyeStrainSlider = document.getElementById('eyeStrainSlider');
+        const eyeStrainValue = document.getElementById('eyeStrainValue');
+
+        const paddingSlider = document.getElementById('paddingSlider');
+        const paddingValue = document.getElementById('paddingValue');
+
+        const lineSpacingSlider = document.getElementById('lineSpacingSlider');
+        const lineSpacingValue = document.getElementById('lineSpacingValue');
+
+        const fontFamilySelect = document.getElementById('fontFamily');
+
+        const html = document.documentElement;
+        const resetButton = document.getElementById('resetDefaults');
+
+        // Define default values
+        const defaults = {
+            fontSize: 16,
+            hueRotate: 0,
+            eyeStrain: 0,
+            padding: 0,
+            lineSpacing: 150,
+            fontFamily: "'Atkinson Hyperlegible', Arial, Helvetica, sans-serif"
+        };
+
+        function updateStyles() {
+            html.style.setProperty('--bs-root-font-size', fontSizeSlider.value + 'px');
+            html.style.setProperty('--hue-rotate', hueRotateSlider.value + 'deg');
+            html.style.setProperty('--eye-strain', eyeStrainSlider.value + '%');
+            html.style.setProperty('--padding', paddingSlider.value + 'em');
+            html.style.setProperty('--line-spacing', lineSpacingSlider.value + '%');
+            html.style.setProperty('--bs-body-font-family', fontFamilySelect.value);
+
+            fontSizeValue.textContent = fontSizeSlider.value;
+            hueRotateValue.textContent = hueRotateSlider.value;
+            eyeStrainValue.textContent = eyeStrainSlider.value;
+            paddingValue.textContent = paddingSlider.value;
+            lineSpacingValue.textContent = lineSpacingSlider.value;
+
+            saveSettings();
+        }
+
+        // Function to save settings to localStorage
+        function saveSettings() {
+            const settings = {
+                fontSize: fontSizeSlider.value,
+                hueRotate: hueRotateSlider.value,
+                eyeStrain: eyeStrainSlider.value,
+                padding: paddingSlider.value,
+                lineSpacing: lineSpacingSlider.value,
+                fontFamily: fontFamilySelect.value
+            };
+            localStorage.setItem('accessibilitySettings', JSON.stringify(settings));
+        }
+
+        // Function to load settings from localStorage
+        function loadSettings() {
+            const savedSettings = localStorage.getItem('accessibilitySettings');
+            if (savedSettings) {
+                const settings = JSON.parse(savedSettings);
+                fontSizeSlider.value = settings.fontSize;
+                hueRotateSlider.value = settings.hueRotate;
+                eyeStrainSlider.value = settings.eyeStrain;
+                paddingSlider.value = settings.padding;
+                lineSpacingSlider.value = settings.lineSpacing;
+                fontFamilySelect.value = settings.fontFamily;
+                updateStyles();
+            }
+        }
+
+        function resetToDefaults() {
+            fontSizeSlider.value = defaults.fontSize;
+            hueRotateSlider.value = defaults.hueRotate;
+            eyeStrainSlider.value = defaults.eyeStrain;
+            paddingSlider.value = defaults.padding;
+            lineSpacingSlider.value = defaults.lineSpacing;
+            fontFamilySelect.value = defaults.fontFamily;
+            updateStyles();
+            localStorage.removeItem('accessibilitySettings');
+        }
+
+        fontSizeSlider.oninput = updateStyles;
+        hueRotateSlider.oninput = updateStyles;
+        eyeStrainSlider.oninput = updateStyles;
+        paddingSlider.oninput = updateStyles;
+        lineSpacingSlider.oninput = updateStyles;
+        fontFamilySelect.onchange = updateStyles;
+        resetButton.onclick = resetToDefaults;
+
+        loadSettings();
+
+    });
+</script>
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">An Optimistic Outlook on Teaching, Learning and Assessment for Coding With the Emergence of Generative AI</span></h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Steven Watterson <a href="mailto:s.watterson@ulster.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Personalised Medicine Centre, School of Medicine, Ulster University
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Laila Dabab Nahas <a href="mailto:ldababn@ed.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Edinburgh Medical School, University of Edinburgh
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Tuğrulcan Elmas <a href="mailto:tugrulcan@ed.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            School of Informatics, University of Edinburgh
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Hebatallah Shoukry <a href="mailto:h.shoukry@hw.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            School of Engineering and Physical Sciences, Heriot-Watt University
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Ozan Evkaya <a href="mailto:Ozan.Evkaya@ed.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            School of Mathematics, University of Edinburgh
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+<div>
+  <div class="keywords">
+    <div class="block-title">Keywords</div>
+    <p>LLMs, scalable-assessment</p>
+  </div>
+</div>
+
+</header>
+
+
+<!--
+### For whom this chapter is:
+
+This chapter is for higher education educators who teach coding or programming and are looking for ideas to use generative AI in teaching and update their assessment practices in the era of AI.
+-->
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>The introduction of generative AI (GenAI) has transformed how staff and students view teaching, learning and assessment. Whilst education is a diverse sector, there has been universal recognition that GenAI has the potential to derail teaching and learning activities <span class="citation" data-cites="bente2024conceptual brennan2023coding">(<a href="#ref-bente2024conceptual" role="doc-biblioref">Bente, Randall, &amp; Wäckerle, 2024</a>; <a href="#ref-brennan2023coding" role="doc-biblioref">Brennan &amp; McDermott, 2023</a>)</span>. The traditional paradigm of communicating ideas, tutoring understanding and assessing learning has become harder to safeguard as authentic when GenAI tools can synthesize text rapidly and easily to a level consistent with passable understanding. Were GenAI tools highly exclusive with limited availability then that risk might be modest, but they have been made widely and freely available, by technology companies that students already trust, as those companies look to build their user bases.</p>
+<p>In light of the impact that GenAI will have on teaching, learning and assessment and recognising that it is likely to become part of the graduate’s tool set, it is worth considering how we can adapt teaching both to support learners to develop their skills with GenAI tools, but also to defend the authenticity of learning and assessment as far as possible. Here, we consider strategies that can be followed to incorporate GenAI into teaching and to adapt assessment to mitigate the risk from GenAI-based fraudulent completion. To understand the rationale for these strategies, it is important to have some understanding of how GenAI tools work.</p>
+</section>
+<section id="how-does-generative-ai-work" class="level2">
+<h2 class="anchored" data-anchor-id="how-does-generative-ai-work">How Does Generative AI Work?</h2>
+<p>GenAI takes a mathematical approach to describing language. Sentences can be broken up into words, partial words, and elements of punctuation. These components are known as tokens and the combination of tokens that make up a line of text is mapped to a data point on a set of axes (in a high number of dimensions). Some processing is applied when creating the data point that weights the relative importance and order of the tokens in the text. Similar text will be mapped to nearby data points, whereas very different text will be mapped to data points that lie far apart <span class="citation" data-cites="hua2024investigating">(<a href="#ref-hua2024investigating" role="doc-biblioref">Hua &amp; Yao, 2024</a>)</span>. The words, partial words, and punctuation that the GenAI recognises as tokens are its vocabulary and the data point describing the text is fed into a neural network. Then calculates the probabilities of each token next following the text, where the neural network itself has been trained with <a href="https://hatchworks.com/blog/gen-ai/large-language-models-guide/">large volumes of literature</a> <span class="citation" data-cites="jiang2020can">(<a href="#ref-jiang2020can" role="doc-biblioref">Jiang, Xu, Araki, &amp; Neubig, 2019</a>)</span>. The GenAI algorithm doesn’t always pick the highest probability next token, but one of the most probable and how much it is allowed to deviate from the most probable choice is a model parameter that ensures some variability in the responses generated. Once the next token has been selected, it is added to the text, a new data point is calculated and this is fed into the neural network, with the process repeating until a suitable volume of text has been generated or a stop signal is reached <span class="citation" data-cites="ponmalar2025evaluation">(<a href="#ref-ponmalar2025evaluation" role="doc-biblioref"><span class="nocase">Ponmalar et al.</span>, 2025</a>)</span>.</p>
+<p>It is worth emphasizing that the text generated is a statistical construction based on the training literature, not a series of quotes. This means that factually correct sentence structures cannot be guaranteed and are only likely to be generated when they are common in the training literature. Factually correct sentences about uncommon topics are harder to produce consistently <span class="citation" data-cites="jiang2020can">(<a href="#ref-jiang2020can" role="doc-biblioref">Jiang et al., 2019</a>)</span>.</p>
+<p>This system is known as a Large Language Model (LLM) and it forms the basis of most GenAIs. One quirk of LLMs is that they are trained to consider the input text, which is formed from the prompt, as factual and to reference it with little statistical reinterpretation. Furthermore, prompts can be extremely lengthy <span class="citation" data-cites="gan2023sensitivity">(<a href="#ref-gan2023sensitivity" role="doc-biblioref">Gan &amp; Mori, 2023</a>)</span>. We can combine these two properties of LLMs to improve the factual accuracy of the generated text by including factual source materials as part of the prompt. This is usually done in a process called Retrieval Augmented Generation (RAG) and it is a way to dramatically improve the factual recall of the generated text. By using RAG, the LLM can be formulated so that it generates narrative text fluently based on its training data, but draws on factual details from source materials through RAG (see <a href="#fig-llm-development" class="quarto-xref">Figure&nbsp;<span>9.1</span></a>). It yields a system that can be both conversational and factually accurate <span class="citation" data-cites="miao2024integrating">(<a href="#ref-miao2024integrating" role="doc-biblioref">Miao, Thongprayoon, Suppadungsuk, Garcia Valencia, &amp; Cheungpasitporn, 2024</a>)</span>.</p>
+<div id="fig-llm-development" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center" alt="A comic showing a robot taking different steps of a knitting task.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-llm-development-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/C19_LLMs_development.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="A comic showing a robot taking different steps of a knitting task.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-llm-development-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.1: Top: LLMs development through a two-step process: pretraining &amp; finetuning with question answering in finetuning where the user asking GenAI to do something (e.g., in this example a metaphor for a user asking the GenAI to create a knitted orange square from wool and GenAI did it). Bottom: enhancement of LLMs through RAG &amp; Reasoning.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="the-current-state-of-genai-in-learning-and-teaching" class="level2">
+<h2 class="anchored" data-anchor-id="the-current-state-of-genai-in-learning-and-teaching">The Current State of GenAI in Learning and Teaching</h2>
+<p>We are still in the early stages of exploring the implications for GenAI in teaching and learning. The literature reveals contradictions in how GenAI tools are employed in education. From one perspective, GenAI offers promising benefits when integrated into educational settings under the guidance of educators using factual frameworks such as RAG. Some systematic studies have shown that GenAI can facilitate student learning, enhancing cognitive, and technical and interpersonal skills, and students who used GenAI performed better than those who did not <span class="citation" data-cites="daniel2025can heung2025chatgpt">(<a href="#ref-daniel2025can" role="doc-biblioref">Daniel, Msambwa, &amp; Wen, 2025</a>; <a href="#ref-heung2025chatgpt" role="doc-biblioref">Heung &amp; Chiu, 2025</a>)</span>. Additionally, students using GenAI outperform those who do not in areas such as learning performance, AI awareness, and managing cognitive load. However, students who do not use GenAI tools demonstrate better critical thinking <span class="citation" data-cites="ji2025human">(<a href="#ref-ji2025human" role="doc-biblioref">Ji, Zhan, Li, Zou, &amp; Lyu, 2025</a>)</span>. Whilst critical thinking is ordinarily superior amongst non-GenAI-using student groups <span class="citation" data-cites="ji2025human">(<a href="#ref-ji2025human" role="doc-biblioref">Ji et al., 2025</a>)</span>, when GenAI is used appropriately improvements in critical thinking have been shown <span class="citation" data-cites="daniel2025can">(<a href="#ref-daniel2025can" role="doc-biblioref">Daniel et al., 2025</a>)</span>. It has been recommended as best practice to encourage students to first attempt tasks independently before consulting GenAI tools <span class="citation" data-cites="kosmyna2025your">(<a href="#ref-kosmyna2025your" role="doc-biblioref">Kosmyna et al., 2025</a>)</span>.</p>
+<p>From the other perspective, questions remain about how to deal with the unguided use of these tools, which can lead to over-reliance and missed learning opportunities for students who over-delegate to GenAI tools <span class="citation" data-cites="kosmyna2025your pearson2025internet">(<a href="#ref-kosmyna2025your" role="doc-biblioref">Kosmyna et al., 2025</a>; <a href="#ref-pearson2025internet" role="doc-biblioref">Pearson, 2025</a>)</span>. This phenomenon, known as “cognitive offloading”, occurs when individuals choose not to commit details to memory or invest effort in learning skills. Instead, they relying heavily on GenAI tools to retrieve data and complete tasks for them <span class="citation" data-cites="pearson2025internet fan2025beware">(<a href="#ref-fan2025beware" role="doc-biblioref">Fan et al., 2024</a>; <a href="#ref-pearson2025internet" role="doc-biblioref">Pearson, 2025</a>)</span>. These challenges are not new. With the advent of search engines, it was documented <span class="citation" data-cites="pearson2025internet">(<a href="#ref-pearson2025internet" role="doc-biblioref">Pearson, 2025</a>)</span> that there was a tendency to memorise less information, instead counting on search engines to facilitate the retrieval of web-based data as a means of recall. As GenAI grows in quality and capability, there is a risk that cognitive offloading may go beyond recall and result in entrusting entire tasks to AI irresponsibly <span class="citation" data-cites="fan2025beware">(<a href="#ref-fan2025beware" role="doc-biblioref">Fan et al., 2024</a>)</span>. Hallucinations and the biases gained in training GenAI tools both present the risk of unintentionally adopting incorrect information and there is concern over the influence of the companies providing the GenAI tools, where accidental or deliberate training biases could affect public usage <span class="citation" data-cites="pearson2025internet">(<a href="#ref-pearson2025internet" role="doc-biblioref">Pearson, 2025</a>)</span>.</p>
+<p>The key differentiator in outcomes is how GenAI is employed. Without proper guidance students can over-rely on GenAI tools, substituting the generated output for their own ideas. It is essential to equip students with strategies to harness GenAI’s potential whilst avoiding its pitfalls <span class="citation" data-cites="boers2025exploring">(<a href="#ref-boers2025exploring" role="doc-biblioref">Boers, Etty, Baars, &amp; Broekhoven, 2025</a>)</span>. Many studies have emphasized the need for longitudinal research to understand the long-term effects of GenAI on recall and cognitive skills, but in the absence of longitudinal research, we must continue to innovate, develop and adapt the guidance and best practices that will support students effectively in integrating GenAI into their academic and professional lives.</p>
+</section>
+<section id="genai-as-a-teaching-and-learning-partner" class="level2">
+<h2 class="anchored" data-anchor-id="genai-as-a-teaching-and-learning-partner">GenAI as a Teaching and Learning Partner</h2>
+<p>GenAI has enormous potential to support students as a teaching and learning partner, offering detailed explanations, engaging in discussions, and interactively responding to queries 24 hours a day, 7 days a week. This makes it a valuable tool that can fulfill a wide range of roles.</p>
+<section id="genai-as-topic-expert" class="level3">
+<h3 class="anchored" data-anchor-id="genai-as-topic-expert">GenAI As Topic Expert</h3>
+<p>By using Retrieval-Augmented Generation (RAG) to integrate a factual corpus of knowledge into GenAI responses, it becomes possible to consider employing GenAI tools as expert systems that can support both staff to teach and students to learn. As a teaching assistant, GenAI has the potential to support staff to create more learning materials across more learning modalities than is currently possible in limited time, which can enhance support for students with different learning preferences <span class="citation" data-cites="raju2025opportunities">(<a href="#ref-raju2025opportunities" role="doc-biblioref">Raju, 2025</a>)</span>. GenAI has the further potential to act as the first receiver for student questions and queries. By increasing the productivity of teaching staff and by resolving the more straightforward queries, GenAI tools have the potential to help teaching staff to increase the time committed to key pedagogical task <span class="citation" data-cites="nyaaba2024generative">(<a href="#ref-nyaaba2024generative" role="doc-biblioref">Nyaaba et al., 2024</a>)</span>.</p>
+<p>The proximity of data points in vector space can represent related ideas. Due to that, GenAIs can connect related ideas well and are adept at providing alternative explanations (as a result of their inherited randomness). GenAIs, therefore, can perform well in tutoring roles and have been well received in studies of student adoption <span class="citation" data-cites="kanont2024generative bouzid2024leveraging watterson2025ai">(<a href="#ref-bouzid2024leveraging" role="doc-biblioref">Bouzid &amp; Piron, 2024</a>; <a href="#ref-kanont2024generative" role="doc-biblioref">Kanont et al., 2024</a>; <a href="#ref-watterson2025ai" role="doc-biblioref">Watterson, Atkinson, Murray, &amp; McDowell, 2025</a>)</span>. GenAI also has the potential to directly benefit the student by acting as a topic expert available 24/7 that can interact with the student and expand on the areas of greatest need, providing truly personalised support. With access to course documentation, it can also help with management of deadlines and timetables, etc. Examples 1 and 2 below demonstrate use of Google Gemini 2.5 Flash and NotebookLM on student queries, with additional information provided by RAG.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Example 1: Administrative Information Provided by RAG to a LLM
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong><em>Input:</em></strong></p>
+<p><strong>Module Handbook</strong></p>
+<ul>
+<li>Degree Programme: Programming exercises for coders.</li>
+<li>Module Code: 1234.</li>
+<li>Office Hours: Tuesday and Thursday 2pm-4pm.</li>
+<li>Module Coordinator: Hamish McBeth.</li>
+<li>Room Number: 12.</li>
+<li>Course Duration: 12 weeks.</li>
+<li>Assessments: Examinations are in weeks 6 and 12. Coursework deadlines are at the end of week 5 and the end of week 11.</li>
+</ul>
+<p><strong><em>Prompt:</em></strong> Who is the coordinator and where and when can I find them?</p>
+<ul>
+<li>Response: The Module Coordinator is Hamish McBeth. You can find him in Room Number 12 during his office hours, which are Tuesday and Thursday from 2pm to 4pm.</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Example 2: Code Provided by RAG to a LLM
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong><em>Input:</em></strong></p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>MyCode.py</strong></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-filename="MyCode.py"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">import</span> numpy <span class="im">as</span> np, pandas <span class="im">as</span> pd </span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="im">from</span> sklearn.datasets <span class="im">import</span> load_iris </span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="im">from</span> sklearn.decomposition <span class="im">import</span> PCA  </span>
+<span id="cb1-4"><a href="#cb1-4"></a></span>
+<span id="cb1-5"><a href="#cb1-5"></a>iris <span class="op">=</span> load_iris() </span>
+<span id="cb1-6"><a href="#cb1-6"></a>pca <span class="op">=</span> PCA(n_components<span class="op">=</span><span class="dv">2</span>) </span>
+<span id="cb1-7"><a href="#cb1-7"></a>principalComponents <span class="op">=</span> pca.fit_transform(iris.data)  </span>
+<span id="cb1-8"><a href="#cb1-8"></a></span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="bu">print</span>(<span class="ss">f"Explained variance by PC1 is "</span>,  pca.explained_variance_ratio_[<span class="dv">0</span>], <span class="ss">f"Explained variance by PC2 is "</span>,  pca.explained_variance_ratio_[<span class="dv">1</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><strong><em>Prompt:</em></strong> Concisely, what does this code do and what does it print out?</p>
+<ul>
+<li>Response: The code performs Principal Component Analysis (PCA) on the Iris dataset, reducing its dimensionality to two principal components. It then prints the explained variance ratio for PC1 and the explained variance ratio for PC2.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="ai-as-a-coding-partner" class="level3">
+<h3 class="anchored" data-anchor-id="ai-as-a-coding-partner">AI as a Coding Partner</h3>
+<p>An effective paradigm used to teach coding is that of paired programming where two coders collaborate on a single script. Each takes a separate role, with one acting as the primary code-writer (driver) and the other acting to spot errors, provide structural feedback and manage the resources needed (navigator). By separating the coding activity into writing and reflective roles, paired programming can improve the efficiency of code delivery; by alternating roles, both partners have the opportunity to learn as they work.</p>
+<p>Where a coder does not have a coding partner, a GenAI can take on the role. As a writing partner, GenAI tools can create code for a precise prompt. GenAI tools are more accurate and less prone to syntactical errors than humans (i.e., they are less likely to forget a comma or bracket or miss a function specific parameters), but they can lack sufficient context to ensure that the code meets every explicit and implicit requirement of a brief or that the blocks of code generated independently can integrate adequately. These errors can be addressed by the coder. As a reflective partner, GenAI tools can evaluate code, recognise structural errors and suggest refinements to a specific remit to support the coder; see Example 3 below. In both cases, the quality of the role-play will be very sensitive to the prompt and so some trial and error may be required. It may be advantageous to separately specify roles in system-level prompts, which are commonly used to frame the subsequent dialogues.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Example 3: Prompted Critique for the code in Example 2 (Gemini 2.5 Flash/NotebookLM)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong><em>Prompt:</em></strong> Please concisely critique this code.</p>
+<p><strong><em>Response:</em></strong> This code snippet from “Iris Dataset PCA Explained Variance” effectively demonstrates the application of Principal Component Analysis (PCA) to the Iris dataset. Here’s a concise critique:</p>
+<p>Positive Aspects:</p>
+<ul>
+<li>Clarity and Purpose: The code is straightforward, clearly showing how to load data, initialise PCA with two components, and then fit and transform the data to calculate the explained variance ratios.</li>
+<li>Standard Libraries: It uses widely accepted libraries such as sklearn.datasets, sklearn.decomposition, and numpy for data loading, PCA, and numerical operations, respectively.</li>
+<li>Direct Output: The print statement effectively displays the explained variance for the first two principal components (PC1 and PC2).</li>
+</ul>
+<p>Areas for Improvement:</p>
+<ul>
+<li>Unused Imports and Variables: The pandas library is imported (import pandas as pd) but not utilised in the provided code snippet. Similarly, the <code>principalComponents</code> variable, which stores the transformed data, is created but not used for any subsequent operations within this specific excerpt.</li>
+<li>Scope: While effective for its stated purpose, the snippet could be extended with visualisations (e.g., a scree plot) or further analysis to demonstrate the practical application of the principal components for dimensionality reduction.</li>
+</ul>
+</div>
+</div>
+<p>A number of Integrated Development Environments (IDEs) already include AIs as a coding partner and this approach is regularly used in industry. Developer surveys and interviews have recorded improvements in code quality and developer satisfaction, but with questions over code reliability, explainability, and trust <span class="citation" data-cites="bughin2024role chen2024impact">(<a href="#ref-bughin2024role" role="doc-biblioref">Bughin, 2024</a>; <a href="#ref-chen2024impact" role="doc-biblioref">Chen, 2024</a>)</span>. Some studies have shown that paired programming with a GenAI tool delivers the best assignment outcomes for students compared to human paired programming or solo programming <span class="citation" data-cites="bughin2024role lyu2025will">(<a href="#ref-bughin2024role" role="doc-biblioref">Bughin, 2024</a>; <a href="#ref-lyu2025will" role="doc-biblioref">Lyu, Wang, Sun, &amp; Zhang, 2025</a>)</span>. However, other studies have suggested that the improvements in the speed with which code is created are offset by the additional time needed to debug the code <span class="citation" data-cites="imai2022github">(<a href="#ref-imai2022github" role="doc-biblioref">Imai, 2022</a>)</span>, and that concerns about sensitive parts of code bases mean that GenAI tools cannot support projects consistently, only in a piecemeal manner <span class="citation" data-cites="coutinho2024role">(<a href="#ref-coutinho2024role" role="doc-biblioref">Coutinho et al., 2024</a>)</span>.</p>
+</section>
+<section id="ai-as-a-puzzle-setter" class="level3">
+<h3 class="anchored" data-anchor-id="ai-as-a-puzzle-setter">AI as a Puzzle Setter</h3>
+<p>GenAIs can be prompted to generate coding questions along with worked solutions. This can be invaluable as a way to efficiently produce formative exercises and it becomes very powerful when pre-existing scripts or code-bases are included by RAG to use as a reference document <span class="citation" data-cites="pourcel2024aces">(<a href="#ref-pourcel2024aces" role="doc-biblioref">Pourcel, Colas, Molinaro, Oudeyer, &amp; Teodorescu, 2024</a>)</span>. Typical exercises can include (i) generating incomplete blocks of code for students to complete, (ii) Parsons puzzles where students rearrange instructions into the correct sequence, or (iii) asking students to interpret the behaviour of a generated block of code (see Example 4) <span class="citation" data-cites="pourcel2024aces hou2024codetailor">(<a href="#ref-hou2024codetailor" role="doc-biblioref">Hou, Wu, Wang, &amp; Ericson, 2024</a>; <a href="#ref-pourcel2024aces" role="doc-biblioref">Pourcel et al., 2024</a>)</span>. This approach allows formative coding exercises to be generated with relative ease that align directly to topics of study, such as a particular algorithm or data set.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Example 4: Using the GenAI Tools To Create Coding Puzzles From the Script Provided by RAG in Example 2 (Gemini 2.5 Flash/NotebookLM)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong><em>Prompt</em></strong>: Produce a version of this code with key words missing that can be used as a teaching and learning exercise.</p>
+<p><strong><em>Response</em></strong>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="im">import</span> numpy <span class="im">as</span> np, ____ <span class="im">as</span> pd}</span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="im">from</span> sklearn.datasets <span class="im">import</span> ____</span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="im">from</span> sklearn.decomposition <span class="im">import</span> ____</span>
+<span id="cb2-4"><a href="#cb2-4"></a></span>
+<span id="cb2-5"><a href="#cb2-5"></a>iris <span class="op">=</span> load_iris()</span>
+<span id="cb2-6"><a href="#cb2-6"></a>pca <span class="op">=</span> PCA(n_components<span class="op">=</span>____)</span>
+<span id="cb2-7"><a href="#cb2-7"></a>principalComponents <span class="op">=</span> pca.____(iris.data)</span>
+<span id="cb2-8"><a href="#cb2-8"></a></span>
+<span id="cb2-9"><a href="#cb2-9"></a><span class="bu">print</span>(<span class="ss">f"Explained variance by PC1 is "</span>, pca.____, <span class="ss">f"Explained variance by PC2 is "</span>, pca.____)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong><em>Prompt:</em></strong> Please rearrange this code in a parsons puzzle.</p>
+<p><strong><em>Response:</em></strong> Parsons Puzzle: Reconstruct the PCA Code — Please arrange these lines of code in the correct sequence to perform PCA on the Iris dataset and print the explained variance ratio. Pay attention to the order and any necessary indentation.</p>
+<pre><code>1. from sklearn.datasets import load_iris
+2. pca = PCA(n_components=2)
+3. print(f"Explained variance by PC1 is ", pca.explained_variance_ratio_, f"Explained variance by PC2 is ", pca.explained_variance_ratio_[1])
+4. principalComponents = pca.fit_transform(iris.data)
+5. import numpy as np, pandas as pd
+6. iris = load_iris()
+7. from sklearn.decomposition import PCA</code></pre>
+<p><strong>How to Solve:</strong> Your task is to place these lines in the logical order of execution for the script. The original script begins with imports, then loads data, initializes the PCA model, performs the transformation, and finally prints the results</p>
+</div>
+</div>
+</section>
+</section>
+<section id="genai-as-a-coding-tool-for-the-student" class="level2">
+<h2 class="anchored" data-anchor-id="genai-as-a-coding-tool-for-the-student">GenAI as a Coding Tool for the Student</h2>
+<p>As the use of GenAI tools to create code grows, the role of the coder will necessarily change. The coder will no longer directly produce code, but instead supervise the tools generating the code. Nonetheless, the requirement to stand over the code and take responsibility for its correctness and accuracy will remain. This can be achieved either (i) by forensically working through the code produced by the GenAI tools or (ii) modularising the challenge, having the GenAI tools separately produce code for each module and then evaluating the performance of each module’s code separately and in combination. The latter is a form of unit testing; a process widely used in industry to manage complex projects across coding teams. Here, it transforms the student into a code manager <span class="citation" data-cites="trautsch2017there osherove2009art">(<a href="#ref-osherove2009art" role="doc-biblioref">Osherove, 2009</a>; <a href="#ref-trautsch2017there" role="doc-biblioref">Trautsch &amp; Grabowski, 2017</a>)</span>. This way of working is both likely to scale better as projects become increasingly sophisticated, but also has the benefit of starting students to think and work in ways that are closer to software roles in industry <span class="citation" data-cites="vorel2025generative bhatia2024unit">(<a href="#ref-bhatia2024unit" role="doc-biblioref">Bhatia, Gandhi, Kumar, &amp; Jalote, 2023</a>; <a href="#ref-vorel2025generative" role="doc-biblioref">Vorel, 2025</a>)</span>. In addition, it is very important to notice that a code manager is not for first or second years students but for more senior students after fully understanding and acquiring the foundational skills to spot mistakes.</p>
+<p>A unit testing approach means introducing a formal design stage where projects are broken into constituent modules/units with clear specifications <span class="citation" data-cites="osherove2009art northwood2018full">(<a href="#ref-northwood2018full" role="doc-biblioref">Northwood, 2018</a>; <a href="#ref-osherove2009art" role="doc-biblioref">Osherove, 2009</a>)</span> in which written modules/units are (i) configured with a state and data on which to run (Arrange), (ii) run on the data and state (Act) and (iii) evaluated on the correctness of the output (Assert). A Test Runner is then constructed to evaluate a range of inputs and outputs for each module.</p>
+<p>A basic unit testing framework evaluates the behaviour of the code, not the code itself, which is well suited to contexts where coding can be entirely devolved to GenAI tools. Where the use of particular commands or data structures is a requirement, the tests must be adapted to reflect this. Ensuring that the tests are rigorous and appropriate will become a new skill and responsibility for the student.</p>
+<p>Unit testing is not only a tool for students to use in code development, but also a tool for staff to use when assessing student submissions and significant work has been undertaken evaluating how well GenAI tools can create unit tests from project briefs <span class="citation" data-cites="bhatia2024unit mock2024generative">(<a href="#ref-bhatia2024unit" role="doc-biblioref">Bhatia et al., 2023</a>; <a href="#ref-mock2024generative" role="doc-biblioref">Mock, Melegati, &amp; Russo, 2024</a>)</span>. There, GenAI such as ChatGPT, Copilot and Gemini were studied in a variety of programming languages such as Python and Java. It was found that such tools perform well, especially in terms of repetitive tests. However, the literature stresses the necessity of human oversight for correctness because of its weaknesses, such as incorrect or hallucinated assertions and weak reasoning about program logic so it requires significant human review.</p>
+</section>
+<section id="assessing-learning" class="level2">
+<h2 class="anchored" data-anchor-id="assessing-learning">Assessing Learning</h2>
+<p>Assessment should always evaluate whether learning has taken place, but, depending on the format, there is significant potential for GenAI to be used fraudulently. The ease of use and high availability of GenAI tools means that conventional take-home, open book, step-wise assignments are highly vulnerable to completion by GenAI tools.</p>
+<p>Whilst it is impossible to devise assessments that are invulnerable to GenAI tools, especially when they must remain accessible to students of a wide range of levels of academic ability, there are strategies we can follow that increase the difficulty and therefore reduce the likelihood of students using GenAI in their submissions. Across the range of academic abilities, the most capable students will feel that they have the least to gain and the most to lose from fraudulently using GenAI. At the other extreme, the least academically able students will feel that they have the most to gain and the least to lose. However, the least able students are also often those who are the least invested in their learning. Our guiding principle to making assessments resistant to GenAIs, is that we must design assignments so that the workload required to complete it by GenAI, ideally exceeds the workload of making an honest submission, but at least exceeds the level of work that less capable students are prepared to commit. Nonetheless, a motivated and capable student will always be able to engineer prompts that support the completion of an assignment. Thus, each of those techniques comes with challenges such as the better start-bias, where students start learning at different levels which we need to take into account and appreciate when developing these strategies. We will consider several strategies here and for a particular exercise, a combination of strategies may be optimal.</p>
+<section id="supervision-of-assessment" class="level3">
+<h3 class="anchored" data-anchor-id="supervision-of-assessment">Supervision of Assessment</h3>
+<p>Amongst the simplest ways to maintain the authenticity of assessment is to enforce strict supervision. This is a time- and labour-consuming approach and is not necessarily an efficient use of resources, especially for longer and more complex assignments.</p>
+<p>A more time-efficient version of this approach involves replacing complex assignments that evaluate the coordinated use of multiple learning outcomes with a series of shorter competency-based assessments each testing a single atomised component of the learning outcomes. This might be a series of tests in which a student is asked to demonstrate core elemental coding skills whilst being observed one-to-one by the assessor. Each assessment for each student may require only a short time, with a binary pass/fail outcome, and progression from the programme then becomes dependent on a portfolio of demonstrated competencies.</p>
+</section>
+<section id="insufficiency" class="level3">
+<h3 class="anchored" data-anchor-id="insufficiency">Insufficiency</h3>
+<p>We can frustrate GenAI by designing assignments with briefs that are individually incomplete and require knowledge from multiple sources to be made complete. Such an assessment must be designed so that a student must bring understanding gained elsewhere to the assessment to fully understand the brief. For a student to use GenAI tools successfully on the assessment, they must both piece together the missing information from the other sources and also formulate it in a way that complements the content of the brief and can be interpreted unambiguously by the GenAI tool. Whilst this will be attainable for the most capable students, returning to the principle described above, we only need to design an assessment so that compiling the brief and the missing information into successful prompts incurs a greater workload than a less capable student is prepared to commit.</p>
+<p>Designing assignments that bring together learning from multiple sources, potentially across different modalities (e.g., using videos, written text and external resources), maximises the workload in completing the assignment brief and therefore the challenge of building a useful prompt for a GenAI tool. In practice, incompleteness can take the form of ambiguous phrasing, ambiguous technical detail, missing stages of a pipeline, or newly introduced terminology with resolutions and definitions embedded elsewhere in the programme (for example, having the general in text while more details are in another form such as a video). What inhibits a student from using GenAI tools successfully in this case is that they must not only piece together the missing information needed to complete the assessment brief, but also formulate it in a way that is useful and unambiguous for GenAI completion.</p>
+<p>Finally, teachers must be aware that some risks could arise from such approaches for developing such assessments. For example, giving extra attention to material accessibility for some students with special needs and trying to avoid extra unnecessary pressure could be added to students as barriers, such as extra time or effort to put in order to complete the assessment.</p>
+</section>
+<section id="misdirection" class="level3">
+<h3 class="anchored" data-anchor-id="misdirection">Misdirection</h3>
+<p>We can construct assignments so that they are interpreted differently by students and by GenAI. The simplest example is where hidden text is placed in an assessment brief. Typically, this is text embedded in a paragraph at a small and unobtrusive font size, coloured to blend into the background. This hidden text will not be seen by the student who manually attempts the assessment brief, but when the brief is copied or imported into a GenAI tool, the hidden text is exposed and treated as a part of the brief. The hidden text can negate a statement, add digits to critical numbers or misdirect the GenAI and whilst it will be observed by a diligent student, it may go unobserved when less care is taken, especially in longer briefs where the hidden text can become harder to discern.</p>
+<p>Critically, the hidden text should be chosen so as to lead to incorrect responses when the brief is imported or copied into a GenAI prompt without careful attention. This may help in making it more complicated for students who are using GenAI to obtain sufficient marks without extra care and true engagement with the assessment. We can not consider this an effective way for detecting GenAI misuse but we can make it harder for those who misuse GenAI to get undeserved accomplishments.</p>
+</section>
+<section id="reverse-engineering-assessments" class="level3">
+<h3 class="anchored" data-anchor-id="reverse-engineering-assessments">Reverse Engineering Assessments</h3>
+<p>The principal strength of GenAI tools lies in their ability to follow a sequence of steps and instructions. Assessments that move away from asking students to complete a prescribed sequence of steps and instead to explore permutations of options to identify an optimal solution are therefore likely to be inherently more challenging for GenAI tools to complete.</p>
+<p>One such approach is to ask the student to reverse engineer an analysis or technique. Providing a student with a starting data set, the output from an analytical pipeline and an understanding of the possible steps that could be combined to derive the output from the starting data set. It is possible to design assessments in which the student must experiment to identify the combination of steps that generate the output from the starting data. If this pipeline has been completely explained elsewhere, this becomes a specialised case of an insufficiency assessment where part of the instructions can be retrieved from elsewhere in the programme. However, if the sequence of steps have not been taught together, but only individually and with alternatives having been explored, the student will have to evaluate multiple permutations of options. Depending on the explicitness of the assessment brief, the number of steps that must be combined and the number of options available at each step, GenAI tools are unlikely to enumerate all possible options to identify the correct answer.</p>
+</section>
+<section id="unsighted-data-sets-and-structures" class="level3">
+<h3 class="anchored" data-anchor-id="unsighted-data-sets-and-structures">Unsighted Data Sets and Structures</h3>
+<p>GenAIs are exposed to large volumes of pre-existing scientific literature as part of their training. Assessments that are designed based on widely published data sets or data structures are likely to be easier for GenAI tools to complete than assessments based on rare or bespoke data sets and structures. GenAIs are sensitive to prompts and will attempt to create code for data sets and structures described in the prompt, but if the assessment data sets and structures are sufficiently uncommon then the differences between this and the sets and structures in the related training data may cause the GenAI tools to code imperfectly, with errors for the rare and bespoke examples. Students will then be challenged and need to demonstrate competency to debug these errors. An effective, rare source of data might be that held within databases as this is less likely to have been scraped as part of a training set.</p>
+<p>This approach comes with the caveat that experience of working with standardised data sets and structures are often an important learning outcome and so directing students towards the rare and bespoke and away from standard data sets and structures may not be constructive or translational.</p>
+</section>
+<section id="student-self-assessment" class="level3">
+<h3 class="anchored" data-anchor-id="student-self-assessment">Student Self-Assessment</h3>
+<p>Whilst it is strategically important to frustrate the use of GenAI in assessment, at the same time, we must acknowledge that GenAI tools have a place supporting student learning and we need to encourage students to use AI constructively to prepare them for the workplace. When used effectively, AI can enhance productivity, ensure continuous skill development and provide a more secure future aligned with emerging technologies.</p>
+<p>Asking students to outline the logical steps they planned and followed using AI tools as an assistant for completing tasks or assessments introduces a certain degree of transparency around GenAI engagement <span class="citation" data-cites="cotelli2025fostering">(<a href="#ref-cotelli2025fostering" role="doc-biblioref">Cotelli Kureth, Paliot, &amp; Zink, 2025</a>)</span>. They should describe the steps taken to validate GenAI outputs, as well as how they addressed biases and disparities in the results. A self-assessment provides students with the additional opportunity to reflect on their experience of working with GenAI tools, identifying when GenAI use was most beneficial, when it was not or was unproductive and how it has improved their learning skills and helped them to achieve their goals <span class="citation" data-cites="combrinck2025student">(<a href="#ref-combrinck2025student" role="doc-biblioref">Combrinck &amp; Loubser, 2025</a>)</span>. Checklists have already been introduced to students to disclose and reflect on their use of GenAI either as part of their assessment or as general guidance. We recommend the example provided by the University of Leeds and <a href="https://generative-ai.leeds.ac.uk/ai-and-assessments/gen-ai-quick-checklist/">published in their generative AI guidance pages</a>.</p>
+</section>
+</section>
+<section id="the-digital-divergence" class="level2">
+<h2 class="anchored" data-anchor-id="the-digital-divergence">The Digital Divergence</h2>
+<p>The introduction of any new technology can create inequalities between those who are skilled and able to exploit the technology and those who aren’t. However, conventionally, new technologies have been peripheral to the main tasks of coding and so have only offered incremental benefits to productivity. The great potential for GenAI tools lies in their ability to directly create code and therefore accelerate productivity. This is qualitatively different to productivity boosts seen before (e.g., before it used to be manually catching typos and errors, while now it could be easily highlighted and caught with different editors or tools supported by GenAI).</p>
+<p>Skilled use of GenAI tools will not only affect the pace at which code is created, but also the scale, so that code can be created quickly and more easily in parallel. These developments will necessarily place an emphasis on code management and prompt engineering, which will have to be taught alongside the fundamentals of coding. These new paradigms raise the level at which a student will be expected to operate and create new standards of excellence for student learners. However, adding new and more layered skills to a teaching programme is likely to exacerbate the academic divide between weaker and stronger learners <span class="citation" data-cites="suarez2025verge rottner2025ai">(<a href="#ref-rottner2025ai" role="doc-biblioref">Rottner et al., 2025</a>; <a href="#ref-suarez2025verge" role="doc-biblioref">Suárez &amp; Garcı́a-Mariñoso, 2025</a>)</span>.</p>
+<p>At the same time, because GenAIs have weakened the legitimacy of the simplest structures of assessment, not only is the syllabus likely to develop in sophistication, but so too will the structures and formats of assessment, potentially compounding confusion and further exacerbating the academic gap between weaker and stronger learners.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Here we have introduced GenAI as both an asset to teaching and learning and a threat to the authenticity of assessment. We have highlighted evidence that GenAI tools can improve productivity, but not necessarily across all the skills associated with coding and that there maybe risks associated with students becoming dependent on GenAI tools. In particular, we highlight the roles that GenAI tools can play that support teaching and learning, namely as a topic expert, coding partner, and puzzle setter. We also explore how to preserve authenticity in assessment in the age of GenAI, where educators must combine several deliberate strategies suggested in this chapter. Strengthened supervision can help ensure genuine student performance, while designing assignments that integrate learning from multiple sources and modalities — such as text, videos, and external materials — increases the cognitive demand and reduces the ease of GenAI misuse. Techniques such as embedding hidden text, using reverse-engineering-based tasks, and working with unsighted or bespoke datasets make it harder for GenAI tools to generate correct answers without genuine student engagement. Finally, incorporating structured student self‑assessment encourages transparency, reflection, and responsible use of GenAI, supporting more authentic demonstration of learning.</p>
+<p>Ultimately, we believe that the introduction of GenAI will transform coding so that the coder’s role becomes that of a code manager. This may change the approach taken to the coding exercises in courses. However, these transformations are so central to how coding is taught, learned, and applied that not all students may be able to adapt equally well across all ability levels. Hence, there is a significant risk that their introduction may exacerbate the gap in abilities rather than close it.</p>
+</section>
+<section id="references" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-bente2024conceptual" class="csl-entry" role="listitem">
+Bente, S., Randall, N., &amp; Wäckerle, D. (2024). <span class="nocase">A Conceptual Framework to Transform Coding Education in Times of Generative AI</span>. <em><span class="nocase">Software Engineering im Unterricht der Hochschulen 2024</span></em>, 93–104. Gesellschaft f<span>ü</span>r Informatik eV. <a href="https://doi.org/10.18420/seuh2024_08">https://doi.org/10.18420/seuh2024_08</a>
+</div>
+<div id="ref-bhatia2024unit" class="csl-entry" role="listitem">
+Bhatia, S., Gandhi, T., Kumar, D., &amp; Jalote, P. (2023). <span class="nocase">Unit test generation using generative AI: A comparative performance analysis of autogeneration tools</span>. <em><span class="nocase">Proceedings of the 2024 IEEE/ACM International Workshop on Large Language Models for Code (LLM4Code)</span></em>, 54–61. <a href="https://doi.org/10.1145/3643795.3648396">https://doi.org/10.1145/3643795.3648396</a>
+</div>
+<div id="ref-boers2025exploring" class="csl-entry" role="listitem">
+Boers, J., Etty, T., Baars, M., &amp; Broekhoven, K. van. (2025). <span class="nocase">Exploring cognitive strategies in human-AI interaction: ChatGPT’s role in creative tasks</span>. <em>Journal of Creativity</em>, <em>35</em>(1), 100095. <a href="https://doi.org/10.1016/j.yjoc.2025.100095">https://doi.org/10.1016/j.yjoc.2025.100095</a>
+</div>
+<div id="ref-bouzid2024leveraging" class="csl-entry" role="listitem">
+Bouzid, S., &amp; Piron, L. (2024). <span class="nocase">Leveraging generative AI in short document indexing</span>. <em>Electronics</em>, <em>13</em>(17), 3563. <a href="https://doi.org/10.3390/electronics13173563">https://doi.org/10.3390/electronics13173563</a>
+</div>
+<div id="ref-brennan2023coding" class="csl-entry" role="listitem">
+Brennan, R. W., &amp; McDermott, B. (2023). <span class="nocase">Coding literacy in the age of generative ai</span>. <em><span class="nocase">International Workshop on Service Orientation in Holonic and Multi-Agent Manufacturing</span></em>, 445–456. Springer. <a href="https://doi.org/10.1007/978-3-031-53445-4_37">https://doi.org/10.1007/978-3-031-53445-4_37</a>
+</div>
+<div id="ref-bughin2024role" class="csl-entry" role="listitem">
+Bughin, J. (2024). <span class="nocase">The role of firm AI capabilities in generative AI-pair coding</span>. <em>Journal of Decision Systems</em>, 1–22. <a href="https://doi.org/10.1080/12460125.2024.2428187">https://doi.org/10.1080/12460125.2024.2428187</a>
+</div>
+<div id="ref-chen2024impact" class="csl-entry" role="listitem">
+Chen, T. (2024). <span class="nocase">The impact of ai-pair programmers on code quality and developer satisfaction: Evidence from timi studio</span>. <em><span class="nocase">Proceedings of the 2024 International Conference on Generative Artificial Intelligence and Information Security</span></em>, 201–205. ACM. <a href="https://doi.org/10.1145/3665348.3665383">https://doi.org/10.1145/3665348.3665383</a>
+</div>
+<div id="ref-combrinck2025student" class="csl-entry" role="listitem">
+Combrinck, C., &amp; Loubser, N. (2025). <span class="nocase">Student self-reflection as a tool for managing GenAI use in large class assessment</span>. <em>Discover Education</em>, <em>4</em>(1), 72. <a href="https://doi.org/10.1007/s44217-025-00461-2">https://doi.org/10.1007/s44217-025-00461-2</a>
+</div>
+<div id="ref-cotelli2025fostering" class="csl-entry" role="listitem">
+Cotelli Kureth, S., Paliot, E., &amp; Zink, S. (2025). <span class="nocase">Fostering transparency: a critical introduction of generative AI in students’ assignments</span>. <em>Language Learning in Higher Education</em>, <em>15</em>(1), 63–85. <a href="https://doi.org/10.1515/cercles-2024-0105">https://doi.org/10.1515/cercles-2024-0105</a>
+</div>
+<div id="ref-coutinho2024role" class="csl-entry" role="listitem">
+Coutinho, M., Marques, L., Santos, A., Dahia, M., França, C., &amp; Souza Santos, R. de. (2024). <span class="nocase">The role of generative ai in software development productivity: A pilot case study</span>. <em><span class="nocase">Proceedings of the 1st ACM International Conference on AI-Powered Software</span></em>, 131–138. ACM. <a href="https://doi.org/10.1145/3664646.3664773">https://doi.org/10.1145/3664646.3664773</a>
+</div>
+<div id="ref-daniel2025can" class="csl-entry" role="listitem">
+Daniel, K., Msambwa, M. M., &amp; Wen, Z. (2025). <span class="nocase">Can generative AI revolutionise academic skills development in higher education? A systematic literature review</span>. <em>European Journal of Education</em>, <em>60</em>(1), e70036. <a href="https://doi.org/10.1111/ejed.70036">https://doi.org/10.1111/ejed.70036</a>
+</div>
+<div id="ref-fan2025beware" class="csl-entry" role="listitem">
+Fan, Y., Tang, L., Le, H., Shen, K., Tan, S., Zhao, Y., … Gašević, D. (2024). <span class="nocase">Beware of metacognitive laziness: Effects of generative artificial intelligence on learning motivation, processes, and performance</span>. <em>British Journal of Educational Technology</em>, <em>56</em>(2), 489–530. <a href="https://doi.org/10.1111/bjet.13544">https://doi.org/10.1111/bjet.13544</a>
+</div>
+<div id="ref-gan2023sensitivity" class="csl-entry" role="listitem">
+Gan, C., &amp; Mori, T. (2023). <span class="nocase">Sensitivity and robustness of large language models to prompt template in Japanese text classification tasks</span>. <em><span class="nocase">Proceedings of the 37th Pacific Asia Conference on Language, Information and Computation</span></em>, 1–11.
+</div>
+<div id="ref-heung2025chatgpt" class="csl-entry" role="listitem">
+Heung, Y. M. E., &amp; Chiu, T. K. (2025). <span class="nocase">How ChatGPT impacts student engagement from a systematic review and meta-analysis study</span>. <em>Computers and Education: Artificial Intelligence</em>, <em>8</em>, 100361. <a href="https://doi.org/10.1016/j.caeai.2025.100361">https://doi.org/10.1016/j.caeai.2025.100361</a>
+</div>
+<div id="ref-hou2024codetailor" class="csl-entry" role="listitem">
+Hou, X., Wu, Z., Wang, X., &amp; Ericson, B. J. (2024). <span class="nocase">Codetailor: Llm-powered personalized parsons puzzles for engaging support while learning programming</span>. <em><span class="nocase">Proceedings of the Eleventh ACM Conference on Learning Scale</span></em>, 51–62. ACM. <a href="https://doi.org/10.1145/3657604.3662032">https://doi.org/10.1145/3657604.3662032</a>
+</div>
+<div id="ref-hua2024investigating" class="csl-entry" role="listitem">
+Hua, H., &amp; Yao, C.-J. (2024). <span class="nocase">Investigating generative AI models and detection techniques: impacts of tokenization and dataset size on identification of AI-generated text</span>. <em>Frontiers in Artificial Intelligence</em>, <em>7</em>, 1469197. <a href="https://doi.org/10.3389/frai.2024.1469197">https://doi.org/10.3389/frai.2024.1469197</a>
+</div>
+<div id="ref-imai2022github" class="csl-entry" role="listitem">
+Imai, S. (2022). <span class="nocase">Is github copilot a substitute for human pair-programming? an empirical study</span>. <em><span class="nocase">Proceedings of the ACM/IEEE 44th International Conference on Software Engineering: Companion Proceedings</span></em>, 319–321. IEEE. <a href="https://doi.org/10.1145/3510454.3522684">https://doi.org/10.1145/3510454.3522684</a>
+</div>
+<div id="ref-ji2025human" class="csl-entry" role="listitem">
+Ji, Y., Zhan, Z., Li, T., Zou, X., &amp; Lyu, S. (2025). <span class="nocase">Human-machine co-creation: the effects of ChatGPT on students’ learning performance, AI awareness, critical thinking, and cognitive load in a STEM course towards entrepreneurship</span>. <em>IEEE Transactions on Learning Technologies</em>, <em>18</em>, 402–415. <a href="https://doi.org/10.1109/TLT.2025.3554584">https://doi.org/10.1109/TLT.2025.3554584</a>
+</div>
+<div id="ref-jiang2020can" class="csl-entry" role="listitem">
+Jiang, Z., Xu, F. F., Araki, J., &amp; Neubig, G. (2019). <span class="nocase">How can we know what language models know?</span> <em>Transactions of the Association for Computational Linguistics</em>, <em>8</em>, 423–438. <a href="https://doi.org/10.1162/tacl_a_00324">https://doi.org/10.1162/tacl_a_00324</a>
+</div>
+<div id="ref-kanont2024generative" class="csl-entry" role="listitem">
+Kanont, K., Pingmuang, P., Simasathien, T., Wisnuwong, S., Wiwatsiripong, B., Poonpirome, K., … Khlaisang, J. (2024). <span class="nocase">Generative-AI, a learning assistant? Factors influencing higher-ed students’ technology acceptance</span>. <em>Electronic Journal of e-Learning</em>, <em>22</em>(6), 18–33. <a href="https://doi.org/10.34190/ejel.22.6.3196">https://doi.org/10.34190/ejel.22.6.3196</a>
+</div>
+<div id="ref-kosmyna2025your" class="csl-entry" role="listitem">
+Kosmyna, N., Hauptmann, E., Yuan, Y. T., Situ, J., Liao, X.-H., Beresnitzky, A. V., … Maes, P. (2025). <span class="nocase">Your brain on ChatGPT: Accumulation of cognitive debt when using an AI assistant for essay writing task</span>. <em>arXiv.org</em>, <em>4</em>.
+</div>
+<div id="ref-lyu2025will" class="csl-entry" role="listitem">
+Lyu, W., Wang, Y., Sun, Y., &amp; Zhang, Y. (2025). <span class="nocase">Will your next pair programming partner be human? an empirical evaluation of generative ai as a collaborative teammate in a semester-long classroom setting</span>. <em><span class="nocase">Proceedings of the Twelfth ACM Conference on Learning Scale</span></em>, 83–94. ACM. <a href="https://doi.org/10.1145/3698205.3729544">https://doi.org/10.1145/3698205.3729544</a>
+</div>
+<div id="ref-miao2024integrating" class="csl-entry" role="listitem">
+Miao, J., Thongprayoon, C., Suppadungsuk, S., Garcia Valencia, O. A., &amp; Cheungpasitporn, W. (2024). <span class="nocase">Integrating retrieval-augmented generation with large language models in nephrology: advancing practical applications</span>. <em>Medicina</em>, <em>60</em>(3), 445. <a href="https://doi.org/10.3390/medicina60030445">https://doi.org/10.3390/medicina60030445</a>
+</div>
+<div id="ref-mock2024generative" class="csl-entry" role="listitem">
+Mock, M., Melegati, J., &amp; Russo, B. (2024). <span class="nocase">Generative AI for test driven development: preliminary results</span>. <em><span class="nocase">International Conference on Agile Software Development</span></em>, 24–32. Springer. <a href="https://doi.org/10.1007/978-3-031-72781-8_3">https://doi.org/10.1007/978-3-031-72781-8_3</a>
+</div>
+<div id="ref-northwood2018full" class="csl-entry" role="listitem">
+Northwood, C. (2018). <em><span class="nocase">The full stack developer: your essential guide to the everyday skills expected of a modern full stack web developer</span></em>. Springer.
+</div>
+<div id="ref-nyaaba2024generative" class="csl-entry" role="listitem">
+Nyaaba, M., Shi, L., Nabang, M., Zhai, X., Kyeremeh, P., Ayoberd, S. A., &amp; Akanzire, B. N. (2024). <span class="nocase">Generative AI as a learning buddy and teaching assistant: Pre-service teachers’ uses and attitudes</span>. <em>arXiv.org</em>. <a href="https://doi.org/10.48550/arXiv.2407.11983">https://doi.org/10.48550/arXiv.2407.11983</a>
+</div>
+<div id="ref-osherove2009art" class="csl-entry" role="listitem">
+Osherove, R. (2009). <span class="nocase">The art of unit testing: with examples in</span>. <em>NET Manning</em>.
+</div>
+<div id="ref-pearson2025internet" class="csl-entry" role="listitem">
+Pearson, H. (2025). <span class="nocase">Are the Internet and AI affecting our memory</span>. <em>Nature</em>, <em>638</em>(8049), 26–28. <a href="https://doi.org/10.1038/d41586-025-00292-z">https://doi.org/10.1038/d41586-025-00292-z</a>
+</div>
+<div id="ref-ponmalar2025evaluation" class="csl-entry" role="listitem">
+<span class="nocase">Ponmalar, P. S. et al.</span> (2025). <span class="nocase">Evaluation Framework for Large Language Models: Assessing Factual Consistency and Answer Relevancy in Question-Answering Tasks</span>. <em><span class="nocase">2025 2nd International Conference on Research Methodologies in Knowledge Management, Artificial Intelligence and Telecommunication Engineering (RMKMATE)</span></em>, 1–6. IEEE; IEEE. <a href="https://doi.org/10.1109/RMKMATE64874.2025.11042605">https://doi.org/10.1109/RMKMATE64874.2025.11042605</a>
+</div>
+<div id="ref-pourcel2024aces" class="csl-entry" role="listitem">
+Pourcel, J., Colas, C., Molinaro, G., Oudeyer, P.-Y., &amp; Teodorescu, L. (2024). <span class="nocase">Aces: Generating a diversity of challenging programming puzzles with autotelic generative models</span>. <em>Neural Information Processing Systems</em>, <em>37</em>, 67627–67662. <a href="https://doi.org/10.52202/079017-2160">https://doi.org/10.52202/079017-2160</a>
+</div>
+<div id="ref-raju2025opportunities" class="csl-entry" role="listitem">
+Raju, B. (2025). <span class="nocase">Generative AI as a Teaching Assistant: Opportunities and Challenges</span>. <em>International Journal of Integrated Research and Practice</em>, <em>1</em>, 28–36. <a href="https://doi.org/10.25215/31075037.031">https://doi.org/10.25215/31075037.031</a>
+</div>
+<div id="ref-rottner2025ai" class="csl-entry" role="listitem">
+Rottner, R., Porter, L., Bock, J., Jannone, J., Senerchia, R. W., Ward, J., &amp; Whittinghill, J. (2025). <span class="nocase">AI and the Digital Divide</span>. In <em><span class="nocase">Teaching and Learning in the Age of Generative AI</span></em> (pp. 309–331). Routledge. <a href="https://doi.org/10.4324/9781032688602-19">https://doi.org/10.4324/9781032688602-19</a>
+</div>
+<div id="ref-suarez2025verge" class="csl-entry" role="listitem">
+Suárez, D., &amp; Garcı́a-Mariñoso, B. (2025). <span class="nocase">On the verge of a digital divide in the use of generative AI?</span> <em>Telecommunications Policy</em>, <em>49</em>(7), 102997. <a href="https://doi.org/10.1016/j.telpol.2025.102997">https://doi.org/10.1016/j.telpol.2025.102997</a>
+</div>
+<div id="ref-trautsch2017there" class="csl-entry" role="listitem">
+Trautsch, F., &amp; Grabowski, J. (2017). <span class="nocase">Are there any unit tests? an empirical study on unit testing in open source python projects</span>. <em><span class="nocase">2017 IEEE International Conference on Software Testing, Verification and Validation (ICST)</span></em>, 207–218. IEEE; IEEE. <a href="https://doi.org/10.1109/ICST.2017.26">https://doi.org/10.1109/ICST.2017.26</a>
+</div>
+<div id="ref-vorel2025generative" class="csl-entry" role="listitem">
+Vorel, R. (2025). <span class="nocase">Generative AI for Coding and Unit Testing</span>. In <em><span class="nocase">NoOps: How AI Agents Are Reinventing DevOps and Software</span></em> (pp. 105–118). Apress. <a href="https://doi.org/10.1007/979-8-8688-1694-9_6">https://doi.org/10.1007/979-8-8688-1694-9_6</a>
+</div>
+<div id="ref-watterson2025ai" class="csl-entry" role="listitem">
+Watterson, S., Atkinson, S., Murray, E., &amp; McDowell, A. (2025). <span class="nocase">AI as a teaching tool and learning partner</span>. <em>arXiv.org</em>. <a href="https://doi.org/10.48550/arXiv.2509.13899">https://doi.org/10.48550/arXiv.2509.13899</a>
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./C08_hype-need-responsible-compute.html" class="pagination-link" aria-label="Hype and The Need for Responsible Compute">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Hype and The Need for Responsible Compute</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./C44_ai-voice-and-style-in-programming-education.html" class="pagination-link" aria-label="AI, Voice, and Style in Programming Education">
+        <span class="nav-page-text"><span class="chapter-title">AI, Voice, and Style in Programming Education</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

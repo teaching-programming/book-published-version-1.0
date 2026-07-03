@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Andrew MacLaren">
+<meta name="author" content="Frederik Madsen">
+<meta name="author" content="Antonia Voigt">
+<meta name="author" content="Alex Buckley">
+<meta name="author" content="Tom Farrington">
+<meta name="keywords" content="education-ecosystem, marking-and-feedback">
+
+<title>Managing the Rubik’s Cube of Assessment: The Action Feedback Protocol – Teaching Programming Across Disciplines</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./C26.1-assessment-case-study.html" rel="next">
+<link href="./C38_skills-based-assessment.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-136cf767a9531f2487009142f5ee0ff5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="_theme/styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./C35_action-feedback-plan.html"><span class="chapter-title">Managing the Rubik’s Cube of Assessment: The Action Feedback Protocol</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Teaching Programming Across Disciplines</a> 
+        <div class="sidebar-tools-main">
+    <div class="dropdown">
+      <a href="" title="" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label=""><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://drive.google.com/file/d/1RXSGxyDcteqqrIdwouAdJ0ayOzNCw2cp/view?usp=sharing">
+            Download PDF
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Teaching Programming Across Disciplines</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C00.0_book_copyright_page.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Copyright</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C00.1_dedication.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dedication</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C00.2_this_book.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Who Are We and How Did We Get Here?</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C00.3_all_parts_introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome to the Book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">=== Part I — Theories and Applications of Teaching Programming</span></span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./P01_part-theories-applications.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introduction to Part I</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Theme — Pair Programming: What? How? Why?</span></span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C12_pair-programming-overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Where Do I Even Start With Pair Programming in My Classroom? A Conversation With Seasoned Practitioners</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C36_pair-programming-across-disciplines.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structured Group Work With Assigned Asymmetrical Roles and Switching: Lessons From Pair Programming Across Disciplines</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C41_pair-programming-tutor-reflections.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pair Programming in Practice: A PhD Tutor’s Reflections</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Theme — Building Healthy Programming Habits</span></span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C09_debugging-beyond-the-debugger.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Brain Book Buddy Boss Break: A Practical Debugging Framework for Learners</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C05_coding-mindset.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Guide on Empowering Students to Develop a Coding Mindset</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C40_coding-forces.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">It Depends: How to Develop Judgement in Programming</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Theme — Programming in a World of Generative AI</span></span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C08_hype-need-responsible-compute.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Hype and The Need for Responsible Compute</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C10_teaching-with-genai.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">An Optimistic Outlook on Teaching, Learning and Assessment for Coding With the Emergence of Generative AI</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C44_ai-voice-and-style-in-programming-education.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">AI, Voice, and Style in Programming Education</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C21_programming-across-disciplines-systems-thinking.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">How Teaching Programming Across Disciplines Can Instil Systems Thinking</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Theme — Teaching Programming Courses: What Worked for Us</span></span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C04_computer-says-no.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Computer Says No: Reducing Technical Barriers to Help Novice Programmers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C14_foster-inclusion-and-accessibility.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Practices To Foster Inclusion and Accessibility in Programming Teaching</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C33_coding-anxiety.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Overcoming Coding Anxiety: Lowering the Stakes and Making It Fun</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C34_three-stars-one-wish.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">3 Stars and 1 Wish: Small and Frequent Student Reflections Promote a Sense of Wonder and a Community of Vulnerability</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C11_sequential-vs-simultaneous.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sequential vs.&nbsp;Simultaneous: Approaches to Learning Programming and Statistics</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">=== Part II — Teaching Programming in Context: Design and Practice</span></span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./P02_part-design-practice.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introduction to Part II</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Theme — Drawing on Group Dynamics for Programming Education</span></span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C16_peer-programming.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Peer Programming in Action: Pair Programming in Larger Groups</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C31_leveraging-the-heterogeneity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Leveraging the Heterogeneity: Teaching Computing Skills to a Multidisciplinary Cohort With a Variable Skill Level</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C23_pair-programming-fusion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Learning Together Across Modes: Online and On-Site Pair Programming in a Fusion Course</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Theme — Teaching Programming to Novices: Python and Beyond</span></span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C01_teaching-python.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Practical Guide to Teaching Python as a Computational Tool in an Introductory Data Analysis Course</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C29_notebooks-for-novices.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Notebooks for Novices? Pros and Cons of Jupyter</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C07_teaching-C-to-novices.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Bridging Languages: Teaching C to Python Novices</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Theme — Thinking Outside the Box: Designing Engaging Learning Experiences</span></span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C06_feminists-and-anarchists.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Dungeon Crawlers and Anarchists: Co-Designing Programming Teaching Experiences</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C15_programming-without-computers.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Removing Barriers by Programming Without Computers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C17_coding-with-music.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Practical Approaches to Using Sound and Music in Programming Pedagogy</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C03_online-teaching-reflections.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Ways to Teach Online: Lessons Learned Through Experience</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C43-data-vis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Seeing Before Coding, Doodling Before Doing: How Teaching Data Visualisation Transforms the Way Students Think</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">=== Part III — Assessment and Feedback: Principles and Practice</span></span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./P03_part-assessment-feedback.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introduction to Part III</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Theme — Frameworks for Assessment and Feedback</span></span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C38_skills-based-assessment.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Developing a Skills-Based Framework for Assessments in Programming Courses</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C35_action-feedback-plan.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Managing the Rubik’s Cube of Assessment: The Action Feedback Protocol</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Theme — Practical Methods for Assessing Programming</span></span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C26.1-assessment-case-study.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assessment and Marking in an Introductory Programming Course for Physics Students</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C02_genai-before-during-after.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Generative AI in Assessments: Before, During, and After</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C20_automatic-marking.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Using Automated Marking in Programming Courses To Enhance Learning</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">=== Part IV — Case Studies</span></span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./P04_part-case-studies.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introduction to Part IV</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Theme — Building Learning Communities and Resources</span></span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C39_gentle-introduction-summer-school.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A Gentle Introduction to Coding: Narratives From a Programming Summer School for Social Sciences and Humanities</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C37_pair-programming-sruc.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Case Study From Scotland’s Rural College: The Wild(Life) Side of Pair Programming</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C22_interdisciplinary-by-design.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Interdisciplinary by Design: The Centre for Data, Culture, &amp; Society Training Programme</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C32_civil-engineering.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Changing Civil Engineering Students’ Mindset Toward Programming</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C24_lost-in-translation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Lost in Translation: Complexities and Good Practices of Translating Coding-Based Teaching Materials Across Multiple Human Languages</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">=== Authors and Images</span></span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C99.1-sendoff.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Closing Remarks for This Book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C99.2-authors.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Authors’ Biographies</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C99.3-images.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Image Register</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C99.4-bibliography.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bibliography</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
+<details id="accessibility-controls">
+    <summary>Display options</summary>
+  
+    <div class="control-group">
+        <label for="fontSizeSlider">Font size</label>
+        <input type="range" id="fontSizeSlider" min="8" max="32" value="16">
+        <span id="fontSizeValue">16</span>px
+    </div>
+  
+    <div class="control-group">
+        <label for="eyeStrainSlider">Eye strain</label>
+        <input type="range" id="eyeStrainSlider" min="0" max="50" value="0">
+        <span id="eyeStrainValue">0</span>%
+    </div>
+  
+    <div class="control-group">
+        <label for="hueRotateSlider">Hue</label>
+        <input type="range" id="hueRotateSlider" min="0" max="360" value="0">
+        <span id="hueRotateValue">0</span>
+    </div>
+  
+    <div class="control-group">
+        <label for="paddingSlider">Padding</label>
+        <input type="range" id="paddingSlider" min="0" max="12" value="3">
+        <span id="paddingValue">0</span>
+    </div>
+  
+    <div class="control-group">
+        <label for="lineSpacingSlider">Spacing</label>
+        <input type="range" id="lineSpacingSlider" min="80" max="250" value="150">
+        <span id="lineSpacingValue">150</span>%
+    </div>
+  
+    <div class="control-group">
+        <label for="fontFamily">Font</label>
+        <select id="fontFamily">
+            <option value="'Atkinson Hyperlegible', sans-serif">Atkinson Hyperlegible</option>
+            <option value="Arial, Helvetica, sans-serif">Sans-serif</option>
+            <option value="Georgia, 'Bitstream Charter', Times, serif">Serif</option>
+        </select>
+    </div>
+  
+    <div class="control-group">
+        <button id="resetDefaults">Reset to Defaults</button>
+    </div>
+
+</details>
+</div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#a-failing-system-or-failure-to-recognise-the-system" id="toc-a-failing-system-or-failure-to-recognise-the-system" class="nav-link active" data-scroll-target="#a-failing-system-or-failure-to-recognise-the-system">A failing system or failure to recognise the system?</a></li>
+  <li><a href="#introducing-the-action-feedback-protocol" id="toc-introducing-the-action-feedback-protocol" class="nav-link" data-scroll-target="#introducing-the-action-feedback-protocol">Introducing the Action Feedback Protocol</a>
+  <ul class="collapse">
+  <li><a href="#tune-the-ear" id="toc-tune-the-ear" class="nav-link" data-scroll-target="#tune-the-ear">Tune the Ear</a></li>
+  <li><a href="#simplify-the-message" id="toc-simplify-the-message" class="nav-link" data-scroll-target="#simplify-the-message">Simplify the Message</a></li>
+  <li><a href="#encourage-action" id="toc-encourage-action" class="nav-link" data-scroll-target="#encourage-action">Encourage Action</a></li>
+  </ul></li>
+  <li><a href="#implementation-and-impact" id="toc-implementation-and-impact" class="nav-link" data-scroll-target="#implementation-and-impact">Implementation and Impact</a>
+  <ul class="collapse">
+  <li><a href="#a-test-case-the-university-of-edinburghs-school-of-geosciences" id="toc-a-test-case-the-university-of-edinburghs-school-of-geosciences" class="nav-link" data-scroll-target="#a-test-case-the-university-of-edinburghs-school-of-geosciences">A Test Case: The University of Edinburgh’s School of GeoSciences</a></li>
+  <li><a href="#how-did-the-afp-work-across-diverse-courses" id="toc-how-did-the-afp-work-across-diverse-courses" class="nav-link" data-scroll-target="#how-did-the-afp-work-across-diverse-courses">How Did the AFP Work Across Diverse Courses?</a></li>
+  <li><a href="#so-how-did-it-go" id="toc-so-how-did-it-go" class="nav-link" data-scroll-target="#so-how-did-it-go">So, How Did It Go?</a></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const fontSizeSlider = document.getElementById('fontSizeSlider');
+        const fontSizeValue = document.getElementById('fontSizeValue');
+
+        const hueRotateSlider = document.getElementById('hueRotateSlider');
+        const hueRotateValue = document.getElementById('hueRotateValue');
+
+        const eyeStrainSlider = document.getElementById('eyeStrainSlider');
+        const eyeStrainValue = document.getElementById('eyeStrainValue');
+
+        const paddingSlider = document.getElementById('paddingSlider');
+        const paddingValue = document.getElementById('paddingValue');
+
+        const lineSpacingSlider = document.getElementById('lineSpacingSlider');
+        const lineSpacingValue = document.getElementById('lineSpacingValue');
+
+        const fontFamilySelect = document.getElementById('fontFamily');
+
+        const html = document.documentElement;
+        const resetButton = document.getElementById('resetDefaults');
+
+        // Define default values
+        const defaults = {
+            fontSize: 16,
+            hueRotate: 0,
+            eyeStrain: 0,
+            padding: 0,
+            lineSpacing: 150,
+            fontFamily: "'Atkinson Hyperlegible', Arial, Helvetica, sans-serif"
+        };
+
+        function updateStyles() {
+            html.style.setProperty('--bs-root-font-size', fontSizeSlider.value + 'px');
+            html.style.setProperty('--hue-rotate', hueRotateSlider.value + 'deg');
+            html.style.setProperty('--eye-strain', eyeStrainSlider.value + '%');
+            html.style.setProperty('--padding', paddingSlider.value + 'em');
+            html.style.setProperty('--line-spacing', lineSpacingSlider.value + '%');
+            html.style.setProperty('--bs-body-font-family', fontFamilySelect.value);
+
+            fontSizeValue.textContent = fontSizeSlider.value;
+            hueRotateValue.textContent = hueRotateSlider.value;
+            eyeStrainValue.textContent = eyeStrainSlider.value;
+            paddingValue.textContent = paddingSlider.value;
+            lineSpacingValue.textContent = lineSpacingSlider.value;
+
+            saveSettings();
+        }
+
+        // Function to save settings to localStorage
+        function saveSettings() {
+            const settings = {
+                fontSize: fontSizeSlider.value,
+                hueRotate: hueRotateSlider.value,
+                eyeStrain: eyeStrainSlider.value,
+                padding: paddingSlider.value,
+                lineSpacing: lineSpacingSlider.value,
+                fontFamily: fontFamilySelect.value
+            };
+            localStorage.setItem('accessibilitySettings', JSON.stringify(settings));
+        }
+
+        // Function to load settings from localStorage
+        function loadSettings() {
+            const savedSettings = localStorage.getItem('accessibilitySettings');
+            if (savedSettings) {
+                const settings = JSON.parse(savedSettings);
+                fontSizeSlider.value = settings.fontSize;
+                hueRotateSlider.value = settings.hueRotate;
+                eyeStrainSlider.value = settings.eyeStrain;
+                paddingSlider.value = settings.padding;
+                lineSpacingSlider.value = settings.lineSpacing;
+                fontFamilySelect.value = settings.fontFamily;
+                updateStyles();
+            }
+        }
+
+        function resetToDefaults() {
+            fontSizeSlider.value = defaults.fontSize;
+            hueRotateSlider.value = defaults.hueRotate;
+            eyeStrainSlider.value = defaults.eyeStrain;
+            paddingSlider.value = defaults.padding;
+            lineSpacingSlider.value = defaults.lineSpacing;
+            fontFamilySelect.value = defaults.fontFamily;
+            updateStyles();
+            localStorage.removeItem('accessibilitySettings');
+        }
+
+        fontSizeSlider.oninput = updateStyles;
+        hueRotateSlider.oninput = updateStyles;
+        eyeStrainSlider.oninput = updateStyles;
+        paddingSlider.oninput = updateStyles;
+        lineSpacingSlider.oninput = updateStyles;
+        fontFamilySelect.onchange = updateStyles;
+        resetButton.onclick = resetToDefaults;
+
+        loadSettings();
+
+    });
+</script>
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Managing the Rubik’s Cube of Assessment: The Action Feedback Protocol</span></h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Andrew MacLaren <a href="mailto:a.maclaren@hw.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            School of Social Sciences, Heriot-Watt University
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Frederik Madsen <a href="mailto:f.d.madsen@sms.ed.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            School of GeoSciences, University of Edinburgh; Lyell Centre, British Geological Survey
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Antonia Voigt <a href="mailto:a.voigt@surrey.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Surrey Business School, University of Surrey
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Alex Buckley <a href="mailto:Alex.Buckley@hw.ac.uk" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Learning and Teaching Academy, Heriot-Watt University
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Tom Farrington <a href="mailto:t.farrington@yahoo.com" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Storm ID
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+<div>
+  <div class="keywords">
+    <div class="block-title">Keywords</div>
+    <p>education-ecosystem, marking-and-feedback</p>
+  </div>
+</div>
+
+</header>
+
+
+<section id="a-failing-system-or-failure-to-recognise-the-system" class="level2">
+<h2 class="anchored" data-anchor-id="a-failing-system-or-failure-to-recognise-the-system">A failing system or failure to recognise the system?</h2>
+<p>A university’s approach to feedback reflects multiple aspects of its relationship with students. Decisions about assessment policy affect the whole institutional landscape, including retention, student experience, National Student Survey results, transparency, staff workload and student employment, as well as students’ academic progress. Feedback is embedded within a system, and innovating in feedback benefits from acknowledging its multidimensional, interdependent features. However, conventional approaches to feedback tend to be limited because they are not framed within the broader institutional system. In this chapter, we introduce the Action Feedback Protocol (AFP), a systems-oriented approach to feedback that aligns student feedback literacy with a simple, efficient approach to producing feedback, all of which is directed towards encouraging the learner to take action.</p>
+<p>We, the authors of this chapter have been involved in the development of the AFP since it began in 2019. We represent the tricky and interdependent moving parts of the feedback Rubik’s cube, including: the students (Antonia was among the first student cohorts to use the AFP and has since completed her PhD in Education); the educators (Andrew and Tom are both Social Scientists, Frederik is a Geophysicist); and the institution (Alex is the assessment and feedback lead for Heriot-Watt’s Learning and Teaching Academy). And a bit like a Rubik’s cube, the AFP is also a 3x3 system: three dimensions that centre around three comments in written feedback.</p>
+<p>Feedback is often considered an isolated event attached to the distribution of marks. <span class="citation" data-cites="higgins2001getting">Higgins, Hartley, &amp; Skelton (<a href="#ref-higgins2001getting" role="doc-biblioref">2001</a>)</span>, among many other researchers, find that this event-type posture stops feedback from being used to its full potential. On the learner side, <span class="citation" data-cites="winstone2017supporting">Winstone, Nash, Parker, &amp; Rowntree (<a href="#ref-winstone2017supporting" role="doc-biblioref">2017</a>)</span> and <span class="citation" data-cites="winstone2017d">Winstone, Nash, Rowntree, &amp; Parker (<a href="#ref-winstone2017d" role="doc-biblioref">2017</a>)</span> highlight the under-emphasised area of learner responsibility in the feedback dynamic, something they describe as a lack of ‘proactive recipience’. The role of the learner is equally important in the ultimate effectiveness of the feedback they receive. <span class="citation" data-cites="orsmond2005biology">Orsmond, Merry, &amp; Reiling (<a href="#ref-orsmond2005biology" role="doc-biblioref">2005, p. 381</a>)</span> note that if feedback “is simply stored in memory and never used, it is not feedback”. This is particularly relevant in Science, Technology, Engineering and Mathematics (STEM) subjects, where reflective practice is not a part of the typical curriculum <span class="citation" data-cites="boswell2023investigating">(<a href="#ref-boswell2023investigating" role="doc-biblioref">Boswell, 2023</a>)</span>. <span class="citation" data-cites="bevan2008seeing">Bevan, Badge, Cann, Willmott, &amp; Scott (<a href="#ref-bevan2008seeing" role="doc-biblioref">2008</a>)</span> and <span class="citation" data-cites="weaver2006students">Weaver (<a href="#ref-weaver2006students" role="doc-biblioref">2006</a>)</span> attribute these issues to the common absence or under-provision of training for learners in the role of feedback in their learning. These conditions create the prevailing sense that more could be done to ensure that learners are adequately prepared to meet the feedback they receive halfway.</p>
+<div id="fig-c35-rubiks-cube" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A partially solved Rubik's Cube at the centre of the image, surrounded by icons representing higher education, such as: a university building, graduation cap, student figure, checklist, books, and graded paper. There are circular arrows indicating an interconnected and dynamic feedback system among the elements displayed.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-c35-rubiks-cube-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./chapters/images/C35-rubiks-cube.png" title="The Rubik's Cube of Assessment" class="img-fluid figure-img" style="width:70.0%" alt="A partially solved Rubik's Cube at the centre of the image, surrounded by icons representing higher education, such as: a university building, graduation cap, student figure, checklist, books, and graded paper. There are circular arrows indicating an interconnected and dynamic feedback system among the elements displayed.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-c35-rubiks-cube-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;31.1: The Rubik’s Cube of Assessment
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="introducing-the-action-feedback-protocol" class="level2">
+<h2 class="anchored" data-anchor-id="introducing-the-action-feedback-protocol">Introducing the Action Feedback Protocol</h2>
+<p>Addressing this complexity therefore requires simultaneous attention on how students are informed on feedback literacy and how they are supported to act on the feedback they receive, as well as carefully considering how we, as educators, produce feedback in the first place. The AFP uses evidence-informed, simple and robust approaches to address feedback as part of a bigger complex system, rather than treating it as an isolated event. The approach therefore tackles head-on the need to foster proactive recipience among learners, couples the nature of feedback produced with students’ expectations of it, and creates structured alignment between staff across marking teams and student programmes. The AFP’s three dimensions are: (1) Tune the Ear, (2) Simplify the Message, and (3) Encourage Action.</p>
+<section id="tune-the-ear" class="level3">
+<h3 class="anchored" data-anchor-id="tune-the-ear">Tune the Ear</h3>
+<p>This dimension involves focusing on improving learners’ feedback literacy, through specific resources that help them understand the purpose and value of feedback. The resources include a professionally recorded podcast, a video, plus documents based on the Developing Engagement with Feedback Toolkit <span class="citation" data-cites="winstone2019building">(<a href="#ref-winstone2019building" role="doc-biblioref">Winstone, Mathlin, &amp; Nash, 2019</a>)</span>.</p>
+</section>
+<section id="simplify-the-message" class="level3">
+<h3 class="anchored" data-anchor-id="simplify-the-message">Simplify the Message</h3>
+<p>At the centre of the AFP system is the ‘three comments approach’. This involves providing feedback comments in a way that is concise, targeted and actionable by following a simple, evidence-based and efficient way of producing feedback comments. The comments are clearly signposted, are presented in a defined order, and use content that is Specific, Substantive, and Supportive (what we call the ‘three Ss’).</p>
+<ul>
+<li><strong>Comment 1 Motivates:</strong> it identifies the main area (or areas) done well in the work and encourages the student to keep up that good practice in the future.</li>
+<li><strong>Comment 2 Informs:</strong> it identifies the main area (or areas) not done so well that were specific to the assessment and explain how they could have been better. In written work, it may be helpful to quote an example from the submission and explain how it could be improved; in calculation-based work, suggesting an alternative formula or a more efficient approach to the calculations may be helpful.</li>
+<li><strong>Comment 3 ‘Feeds forward’:</strong> it identifies a point of process that is generally applicable to assessed work on the programme (or later in a specific course), suggesting ways in which that could be improved for future work. For example, if several errors relate to a foundational principle or law in the subject, directing a student to revisit that will help them in future work. Or, it may be a specific technique that is applicable to multiple assessment types, such as referencing or notation.</li>
+</ul>
+</section>
+<section id="encourage-action" class="level3">
+<h3 class="anchored" data-anchor-id="encourage-action">Encourage Action</h3>
+<p>This involves signposting students to help them reflect on the feedback, and encouraging them to take meaningful action on it as part of learning and improving (e.g.&nbsp;giving them access to resources such as a feedback portfolio and development tracker).</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>A Genuine Example of the Three Comments From Engineering
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><p><strong>Aspect(s) done particularly well:</strong> A feature of this work that was done well was the presentation of a very detailed report in terms of the experimental work and its results. It demonstrates a good understanding of thermal systems and subsystem integration. The relevance to sustainable energy practices in Malaysia is well contextualised.</p></li>
+<li><p><strong>Aspect(s) that could have been done better:</strong> An area in this work where there was room for further development was to expand on discrepancies between theoretical and experimental results. For example, the mismatch in sand heating times could be analysed in more depth, with specific proposals for reducing air gaps or improving pipeline design. Greater attention on the scalability of the system for real-world applications and how the economic feasibility would be addressed would be valuable things to include in the discussion.</p></li>
+<li><p><strong>A point of process that should be worked on for the future:</strong> Something that might help you in future work would be to consider report writing technique, this is very important for professional engineers. Part of the report’s job is to help the reader make sense of the meaning of results, not just report them. Working on this will improve your professional reporting practice. By continuing to improve your presentation (e.g.&nbsp;refer to all images and graphs from within the text, number equations, use a numbered (IEEE) system of standard referencing fully) you will develop skills that will stay with you throughout your engineering career.</p></li>
+</ul>
+<p><strong>Now Make an Action Plan For Your Feedback!</strong> Now that you have read your feedback, it is important that you take action on it.</p>
+<p>Feedback not acted upon is not really feedback, so now it is up to you to make an action plan to ensure you make the most of this feedback and use it in your future work. You can make your action plan by simply hitting ‘add comment’ below, or even better you can <strong>download the feedback portfolio</strong> on the <a href="https://sites.google.com/view/makingthemostoffeedback/home">‘Making the Most of Feedback’ site</a>. This will help you make an action plan and track your progress across all your assessed work.</p>
+</div>
+</div>
+<p>The AFP is designed to be as simple as possible for everyone: parsimonious and efficient for educators and, most importantly, clear and supportive to learners. It takes a ‘less is more approach’ to assessment and feedback. <span class="citation" data-cites="ackerman2010instructor">Ackerman &amp; Gross (<a href="#ref-ackerman2010instructor" role="doc-biblioref">2010</a>)</span> tell us that students become overwhelmed with copious feedback that is hard to penetrate. This means they are less likely to act on their feedback, which makes it less useful. The AFP does significant heavy lifting on the part of markers and course leaders by increasing student feedback literacy and setting their expectations around what good feedback looks like. This in turn allows students to meet the system halfway, as engaged learners. It gives markers a template to follow which helps them manage their workload within a marking team, and it gives helpful and supportive signposting to students about where to go and what to do next when they receive their feedback.</p>
+</section>
+</section>
+<section id="implementation-and-impact" class="level2">
+<h2 class="anchored" data-anchor-id="implementation-and-impact">Implementation and Impact</h2>
+<p>The AFP has been implemented at Heriot-Watt University across multiple disciplines such as Mathematics, Computer Science, Engineering, Physics, Languages, Economics, and Psychology across all its global campuses in Scotland, Dubai and Malaysia. It has received positive evaluations from both staff and students with surveys over multiple years indicating high levels of satisfaction with the clarity, helpfulness, and perceived fairness of feedback delivered using the AFP. Additionally, uptake beyond the institution, in contexts including STEM disciplines at other UK universities, suggests a degree of adaptability across subject and institutional boundaries. Importantly, the AFP is intended as an Open Educational Resource (OER), aiming to support learners and educators across all disciplines to engage with the feedback process. The idea is that the AFP creates a system through which there is a form of teamwork that aligns all sides of the feedback dynamic: learners, educators and institutions <span class="citation" data-cites="maclaren2026feedback">(<a href="#ref-maclaren2026feedback" role="doc-biblioref">MacLaren, 2026</a>)</span>.</p>
+<section id="a-test-case-the-university-of-edinburghs-school-of-geosciences" class="level3">
+<h3 class="anchored" data-anchor-id="a-test-case-the-university-of-edinburghs-school-of-geosciences">A Test Case: The University of Edinburgh’s School of GeoSciences</h3>
+<p>The following describes the experience of using the AFP, in its accessible OER form, in two undergraduate courses at the University of Edinburgh’s School of GeoSciences, in the academic year 2024-2025: GeoSciences Outreach and Engagement (GO&amp;E) and Research Training for Geophysics (RTG). Neither course was restructured to incorporate the AFP, the protocol was adopted within the existing delivery structure. GO&amp;E is a final year course, which is open to all undergraduates, but typically taken by students from the Schools of GeoSciences and Physics. In this course, students are given at least two supervisors — one member of academic staff, and one postgraduate tutor — whom they meet regularly. As outlined by <span class="citation" data-cites="cross2022geoscience">Cross et al. (<a href="#ref-cross2022geoscience" role="doc-biblioref">2022</a>)</span>, this course stood out from ‘conventional’ courses in that the evaluation primarily focused on authentic assessment and student engagement. RTG, on the other hand, is a penultimate year course, mandatory in the Geophysics undergraduate degree. This course is more conventional in its assessment, as the students are assessed on two pieces of written work.</p>
+</section>
+<section id="how-did-the-afp-work-across-diverse-courses" class="level3">
+<h3 class="anchored" data-anchor-id="how-did-the-afp-work-across-diverse-courses">How Did the AFP Work Across Diverse Courses?</h3>
+<p>The assessment design in both courses remained the same, and the only change we implemented in the courses was the format of the system of feedback in order to align with the AFP. This was a useful test of the ease with which the AFP could be retrofitted to an existing assessment structure. However, as these courses are very different, the way we fitted the AFP into each course was adjusted accordingly.</p>
+<p>In GO&amp;E, there were six assessments spread throughout the course. For the first assessment, which was formative, supervisors provided the feedback verbally, structuring their approach using the ‘Simplify the Message’ dimension. After each assessment that followed, the supervisory team was focused on helping students to produce individual action points, building on the ‘Encourage Action’ dimension from the AFP. This process was repeated individually for each student on each of the assessments, thus making it a continuous process. The nature of the regular dialogue and action planning also allowed the ‘Tune the Ear’ content to be reinforced.</p>
+<p>In RTG, there were two major assessments, both written: a literature review, and a group project report. The literature review, due in the final part of semester 1, was assessed as usual, according to four marking criteria (content; communication; presentation; and referencing) and comments were provided following the ‘Simplify the Message’ three comments structure. Here, the AFP was being rolled out in a more standard summative assessment sense, with dedicated class-time to ‘Tune the Ear’ and develop feedback literacy prior to the release of results. Once results and feedback were made available, we ran a further classroom session to guide the students on how to utilise their feedback through a set of reflective exercises, in line with the ‘Encourage Action’ steps of the AFP. This session gave them time to write action points from their literature review to use in their forthcoming group project reports (the second assessment on the course), which enabled the students to use the AFP to feed forward into the subsequent assessment.</p>
+</section>
+<section id="so-how-did-it-go" class="level3">
+<h3 class="anchored" data-anchor-id="so-how-did-it-go">So, How Did It Go?</h3>
+<p>The AFP was well received in both courses. In GO&amp;E, the course organiser noted two distinct benefits to embracing the AFP as the feedback system; the first underscores the fact educators should not overlook the power of motivational and affirmational feedback, and the second is aligning across larger and more diverse marking teams, a common challenge in modern higher education.</p>
+<blockquote class="blockquote">
+<p>“There were two main advantages to this approach. Firstly, the staff were encouraging reflection on well-handled skills, not solely skills needing to be developed and this promoted a balanced and inclusive approach to upskilling students. Secondly, the student feedback became much more consistent between staff and between assessment items.” — Kay Douglas, Course Organiser of GO&amp;E</p>
+</blockquote>
+<p>Given the nature of assessment and supervision in GOE, it also felt natural to make the assessment feedback process more verbal and conversational, and empower the students to create action points based on both their strengths and weaknesses. It was also interesting to see that the system logic and structure of Tune the Ear, Simplify the Message, and Encourage Action could be translated to synchronous verbal communication as much as it could be used in asynchronous written feedback.</p>
+<p>In RTG, there was an opportunity to include the students in the decision on using the AFP, and noting their opinions on it. After running a session on reflective practice and engaging with assessment feedback, the students were anonymously polled on how they perceive feedback currently in their degree and if they preferred this new approach. A total of 90% of the cohort welcomed using the AFP in ‘most to all’ of their courses, and a similar proportion felt more inclined to use their feedback if presented in this format. This gave us encouraging evidence that implementing a feedback system like the AFP could benefit nearly all courses. It is easy to incorporate alongside pre-existing marking rubrics and can streamline marking processes. Most importantly, it empowers the student voice, turning the feedback experience around from unidirectional to dialogical.</p>
+<blockquote class="blockquote">
+<p>“Only improvement would be more! If you’d be able to run a session earlier in the year OR in an earlier year” — 3rd year Geophysics student, enrolled in RTG</p>
+</blockquote>
+<p>As suggested by one student in RTG, this could have even more impact if this approach to feedback was introduced from day one of the university experience. This could both empower the student voice in the assessment cycle, and standardise the student experience across multiple courses.</p>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>The AFP offers a structured and pragmatic response to persistent challenges in feedback practice. By aligning student expectations with staff capabilities, and by foregrounding simplicity and student agency, the AFP presents a viable and robust model for enhancing the educational value of feedback in higher education. Its emphasis on parsimony, consistency, and actionability makes it a valuable contribution to contemporary assessment design. As an OER, the AFP’s resources are available and free to all. There are learner-facing resources and educator-facing resources. Feedback is a three-dimensional puzzle and our hope is the AFP helps manage that complexity. By taking a systems-level view, our intention is to create a sense of alignment between students’ expectations, our approach as marking teams, and institutional norms around assessment.</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Resources
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><a href="https://sites.google.com/view/theactionfeedbackprotocol/home">The Action Feedback Protocol (for educators)</a></li>
+<li><a href="https://sites.google.com/view/makingthemostoffeedback/home">Making the Most of Feedback (for learners)</a></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="references" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-ackerman2010instructor" class="csl-entry" role="listitem">
+Ackerman, D. S., &amp; Gross, B. L. (2010). <span class="nocase">Instructor feedback: How much do students really want?</span> <em>Journal of Marketing Education</em>, <em>32</em>(2), 172–181. <a href="https://doi.org/10.1177/0273475309360159">https://doi.org/10.1177/0273475309360159</a>
+</div>
+<div id="ref-bevan2008seeing" class="csl-entry" role="listitem">
+Bevan, R., Badge, J., Cann, A., Willmott, C., &amp; Scott, J. (2008). <span class="nocase">Seeing eye-to-eye? Staff and student views on feedback</span>. <em>Bioscience Education</em>, <em>12</em>(1), 1–15. <a href="https://doi.org/10.3108/beej.12.1">https://doi.org/10.3108/beej.12.1</a>
+</div>
+<div id="ref-boswell2023investigating" class="csl-entry" role="listitem">
+Boswell, M. (2023). <span class="nocase">Investigating STEM pathway students’ perceptions of reflective practice: A case study</span>. <em>The Language Scholar</em>, <em>7</em>.
+</div>
+<div id="ref-cross2022geoscience" class="csl-entry" role="listitem">
+Cross, A., Douglas, K., Madsen, F. D., Zaja, E., Graham, C., &amp; Auyeung, B. (2022, March 13). <span class="nocase">Geoscience outreach: what we do, how we assess, and client/student reflections</span>. Retrieved March 26, 2026, from <a href="https://blogs.ed.ac.uk/teaching-matters/geoscience-outreach-what-we-do-how-we-assess-and-client-student-reflections/">https://blogs.ed.ac.uk/teaching-matters/geoscience-outreach-what-we-do-how-we-assess-and-client-student-reflections/</a>
+</div>
+<div id="ref-higgins2001getting" class="csl-entry" role="listitem">
+Higgins, R., Hartley, P., &amp; Skelton, A. (2001). <span class="nocase">Getting the message across: the problem of communicating assessment feedback</span>. <em>Teaching in Higher Education</em>, <em>6</em>(2), 269–274. <a href="https://doi.org/10.1080/13562510120045230">https://doi.org/10.1080/13562510120045230</a>
+</div>
+<div id="ref-maclaren2026feedback" class="csl-entry" role="listitem">
+MacLaren, A. (2026). <span class="nocase">Feedback as teamwork: restoring agency &amp; academic quality through the Action Feedback Protocol</span>. <em>Research Intelligence</em>, (166), 16–17.
+</div>
+<div id="ref-orsmond2005biology" class="csl-entry" role="listitem">
+Orsmond, P., Merry, S., &amp; Reiling, K. (2005). <span class="nocase">Biology students’ utilization of tutors’ formative feedback: A qualitative interview study</span>. <em>Assessment &amp; Evaluation in Higher Education</em>, <em>30</em>(4), 369–386. <a href="https://doi.org/10.1080/02602930500099177">https://doi.org/10.1080/02602930500099177</a>
+</div>
+<div id="ref-weaver2006students" class="csl-entry" role="listitem">
+Weaver, M. R. (2006). <span class="nocase">Do students value feedback? Student perceptions of tutors’ written responses</span>. <em>Assessment &amp; Evaluation in Higher Education</em>, <em>31</em>(3), 379–394. <a href="https://doi.org/10.1080/02602930500353061">https://doi.org/10.1080/02602930500353061</a>
+</div>
+<div id="ref-winstone2019building" class="csl-entry" role="listitem">
+Winstone, N. E., Mathlin, G., &amp; Nash, R. A. (2019). <span class="nocase">Building feedback literacy: Students’ perceptions of the developing engagement with feedback toolkit</span>. <em>Frontiers in Education</em>, <em>4</em>, 39. <a href="https://doi.org/10.3389/feduc.2019.00039">https://doi.org/10.3389/feduc.2019.00039</a>
+</div>
+<div id="ref-winstone2017supporting" class="csl-entry" role="listitem">
+Winstone, N. E., Nash, R. A., Parker, M., &amp; Rowntree, J. (2017). <span class="nocase">Supporting learners’ agentic engagement with feedback: A systematic review and a taxonomy of recipience processes</span>. <em>Educational Psychologist</em>, <em>52</em>(1), 17–37. <a href="https://doi.org/10.1080/00461520.2016.1207538">https://doi.org/10.1080/00461520.2016.1207538</a>
+</div>
+<div id="ref-winstone2017d" class="csl-entry" role="listitem">
+Winstone, N. E., Nash, R. A., Rowntree, J., &amp; Parker, M. (2017). <span class="nocase"><span>“It’d be useful, but I wouldn’t use it”</span>: barriers to university students’ feedback seeking and recipience</span>. <em>Studies in Higher Education</em>, <em>42</em>(11), 2026–2041. <a href="https://doi.org/10.1080/03075079.2015.1130032">https://doi.org/10.1080/03075079.2015.1130032</a>
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./C38_skills-based-assessment.html" class="pagination-link" aria-label="Developing a Skills-Based Framework for Assessments in Programming Courses">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Developing a Skills-Based Framework for Assessments in Programming Courses</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./C26.1-assessment-case-study.html" class="pagination-link" aria-label="Assessment and Marking in an Introductory Programming Course for Physics Students">
+        <span class="nav-page-text"><span class="chapter-title">Assessment and Marking in an Introductory Programming Course for Physics Students</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
