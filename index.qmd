@@ -1,6 +1,6 @@
 # Teaching Programming Across Disciplines {.unnumbered .unlisted}
 
-v1.0 as published in print.
+This is v1.0 as published in print.
 
 ![](/chapters/images/C00_book_logo.jpg){#abook_logo fig-alt="Graphic with words Teaching Programming Across Disciplines" width=100% }
 
